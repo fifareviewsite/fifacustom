@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/page/index'); // この行を編集
 });
+
+// この行を追加
+Route::get('/home', 'HomeController@index')->name('home');

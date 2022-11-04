@@ -1,0 +1,3878 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOP画面</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: TOP画面;
+		--web-view-id: TOP;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: TOP;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#TOP {
+		position: absolute;
+		width: 390px;
+		height: 846px;
+		background-color: rgba(240,240,245,1);
+		overflow: hidden;
+		--web-view-name: TOP画面;
+		--web-view-id: TOP;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#n_35 {
+		position: absolute;
+		width: 358px;
+		height: 714px;
+		left: 16px;
+		top: 95px;
+		overflow: visible;
+	}
+	#n_84 {
+		position: absolute;
+		width: 358px;
+		height: 714px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Big_info_card {
+		position: absolute;
+		width: 358px;
+		height: 714px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Big_info_card_r {
+		position: absolute;
+		width: 358px;
+		height: 714px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_30 {
+		position: absolute;
+		width: 358px;
+		height: 714px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS {
+		filter: drop-shadow(3px 3px 20px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 417px;
+		height: 774px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_v {
+		fill: url(#Rectangle_WS_v);
+	}
+	.Rectangle_WS_v {
+		filter: drop-shadow(-3px -3px 20px rgba(255, 255, 255, 1));
+		overflow: visible;
+		position: absolute;
+		width: 418px;
+		height: 773.812px;
+		left: 0px;
+		top: 0.188px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Voice_guide_button {
+		position: absolute;
+		width: 96px;
+		height: 30px;
+		left: 241px;
+		top: 673px;
+		overflow: visible;
+		transition: all 0.30000001192092896s snap;
+		--web-animation: fadein 0.30000001192092896s snap;
+		--web-action-type: page;
+		--web-action-target: _______.html;
+		cursor: pointer;
+	}
+	#Rectangle_DS_x {
+		opacity: 0.8;
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_x {
+		filter: drop-shadow(1px 1px 9px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 123px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_z {
+		fill: url(#Rectangle_WS_z);
+	}
+	.Rectangle_WS_z {
+		filter: drop-shadow(-3px -3px 16px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 144px;
+		height: 78px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1 {
+		position: absolute;
+		width: 32px;
+		height: 12px;
+		left: 45px;
+		top: 10px;
+		overflow: visible;
+	}
+	#n_ {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 33px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+		text-transform: uppercase;
+	}
+	#CF20 {
+		left: 10px;
+		top: 7px;
+		position: absolute;
+		overflow: visible;
+		width: 287px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(87,95,107,1);
+	}
+	#n_0221021 {
+		left: 248px;
+		top: 30px;
+		position: absolute;
+		overflow: visible;
+		width: 97px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 19px;
+		color: rgba(87,95,107,1);
+	}
+	#n_-3-1-2 {
+		opacity: 0.144;
+		left: 10px;
+		top: 32px;
+		position: absolute;
+		overflow: visible;
+		width: 125px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(87,95,107,1);
+	}
+	#Like_button {
+		position: absolute;
+		width: 29px;
+		height: 29px;
+		left: 25px;
+		top: 674px;
+		overflow: visible;
+	}
+	#Rectangle_DS_ {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_ {
+		filter: drop-shadow(3px 3px 20px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		height: 89px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_ba {
+		fill: url(#Rectangle_WS_ba);
+	}
+	.Rectangle_WS_ba {
+		filter: drop-shadow(-4px -4px 30px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 119px;
+		height: 119px;
+		left: 0px;
+		top: 0px;
+	}
+	#like-svgrepo-com {
+		position: absolute;
+		width: 13.181px;
+		height: 11.801px;
+		left: 8.492px;
+		top: 8.763px;
+		overflow: visible;
+	}
+	#n_3 {
+		position: absolute;
+		width: 2.525px;
+		height: 8.417px;
+		left: 0px;
+		top: 3.384px;
+		overflow: visible;
+	}
+	#n_2 {
+		position: absolute;
+		width: 2.525px;
+		height: 8.417px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_2_bd {
+		fill: url(#n_2_bd);
+	}
+	.n_2_bd {
+		overflow: visible;
+		position: absolute;
+		width: 2.525px;
+		height: 8.417px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_5 {
+		position: absolute;
+		width: 9.524px;
+		height: 10.959px;
+		left: 3.657px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_4 {
+		position: absolute;
+		width: 9.524px;
+		height: 10.959px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_3_bh {
+		fill: url(#n_3_bh);
+	}
+	.n_3_bh {
+		overflow: visible;
+		position: absolute;
+		width: 9.524px;
+		height: 10.959px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Bookmark_button {
+		position: absolute;
+		width: 30px;
+		height: 29px;
+		left: 75px;
+		top: 674px;
+		overflow: visible;
+	}
+	#Rectangle_DS_bj {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_bj {
+		filter: drop-shadow(3px 3px 20px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 90px;
+		height: 89px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_bl {
+		fill: url(#Rectangle_WS_bl);
+	}
+	.Rectangle_WS_bl {
+		filter: drop-shadow(-4px -4px 30px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 119px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_awesome-bookmark_bn {
+		fill: url(#Icon_awesome-bookmark_bn);
+	}
+	.Icon_awesome-bookmark_bn {
+		overflow: visible;
+		position: absolute;
+		width: 8.734px;
+		height: 11.645px;
+		left: 10.58px;
+		top: 8.872px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#DEFENSE {
+		left: 135px;
+		top: 447px;
+		position: absolute;
+		overflow: visible;
+		width: 86px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(87,95,107,1);
+	}
+	#Text {
+		left: 19px;
+		top: 496px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(87,95,107,1);
+	}
+	#Slider {
+		position: absolute;
+		width: 229px;
+		height: 9px;
+		left: 74px;
+		top: 501px;
+		overflow: visible;
+	}
+	#n_4_br {
+		position: absolute;
+		width: 229px;
+		height: 9px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_4_bt {
+		fill: url(#n_4_bt);
+	}
+	.n_4_bt {
+		filter: drop-shadow(-1px 2px 6px rgba(250, 129, 17, 1));
+		position: absolute;
+		overflow: visible;
+		width: 167px;
+		height: 27px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_0 {
+		left: 318px;
+		top: 493px;
+		position: absolute;
+		overflow: visible;
+		width: 21px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_bv {
+		left: 150px;
+		top: 475px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(87,95,107,1);
+	}
+	#OFFENSE {
+		left: 135px;
+		top: 547px;
+		position: absolute;
+		overflow: visible;
+		width: 87px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_bx {
+		left: 19px;
+		top: 615px;
+		position: absolute;
+		overflow: visible;
+		width: 19px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(87,95,107,1);
+	}
+	#Slider_by {
+		position: absolute;
+		width: 229px;
+		height: 9px;
+		left: 74px;
+		top: 620px;
+		overflow: visible;
+	}
+	#n_4_bz {
+		position: absolute;
+		width: 229px;
+		height: 9px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_4_ca {
+		fill: url(#n_4_ca);
+	}
+	.n_4_ca {
+		filter: drop-shadow(-1px 2px 6px rgba(182, 18, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 202px;
+		height: 27px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_0_b {
+		left: 318px;
+		top: 612px;
+		position: absolute;
+		overflow: visible;
+		width: 22px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_b {
+		left: 126px;
+		top: 575px;
+		position: absolute;
+		overflow: visible;
+		width: 105px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_ca {
+		left: 152px;
+		top: 593px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		color: rgba(87,95,107,1);
+	}
+	#PA {
+		left: 19px;
+		top: 647px;
+		position: absolute;
+		overflow: visible;
+		width: 23px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(87,95,107,1);
+	}
+	#Slider_b {
+		position: absolute;
+		width: 229px;
+		height: 9px;
+		left: 74px;
+		top: 652px;
+		overflow: visible;
+	}
+	#n_4_cb {
+		position: absolute;
+		width: 229px;
+		height: 9px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_4_cd {
+		fill: url(#n_4_cd);
+	}
+	.n_4_cd {
+		filter: drop-shadow(-1px 2px 6px rgba(250, 129, 17, 1));
+		position: absolute;
+		overflow: visible;
+		width: 100px;
+		height: 27px;
+		left: 0px;
+		top: 0px;
+	}
+	#n__ca {
+		left: 318px;
+		top: 644px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_cb {
+		left: 19px;
+		top: 523px;
+		position: absolute;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(87,95,107,1);
+	}
+	#Slider_cc {
+		position: absolute;
+		width: 229px;
+		height: 9px;
+		left: 74px;
+		top: 528px;
+		overflow: visible;
+	}
+	#n_4_ce {
+		position: absolute;
+		width: 229px;
+		height: 9px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_4_cg {
+		fill: url(#n_4_cg);
+	}
+	.n_4_cg {
+		filter: drop-shadow(-1px 2px 6px rgba(207, 255, 100, 1));
+		position: absolute;
+		overflow: visible;
+		width: 132px;
+		height: 27px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_0_cg {
+		left: 318px;
+		top: 520px;
+		position: absolute;
+		overflow: visible;
+		width: 22px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(87,95,107,1);
+	}
+	#n__button_pressed {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 116px;
+		top: 387px;
+		overflow: visible;
+	}
+	#n__button_pressed_ci {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_3_cj {
+		fill: rgba(240,240,245,1);
+	}
+	.n_3_cj {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 7px;
+		left: 13px;
+		top: 22px;
+	}
+	#n__button_pressed_ck {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 193px;
+		top: 387px;
+		overflow: visible;
+	}
+	#n__button_pressed_cl {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_3_cm {
+		fill: rgba(240,240,245,1);
+	}
+	.n_3_cm {
+		position: absolute;
+		overflow: visible;
+		width: 24px;
+		height: 7px;
+		left: 13px;
+		top: 22px;
+	}
+	#CB {
+		left: 128px;
+		top: 401px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(87,95,107,1);
+	}
+	#CB_co {
+		left: 205px;
+		top: 401px;
+		position: absolute;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(87,95,107,1);
+	}
+	#Credit_cards {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 43px;
+		top: 80px;
+		overflow: visible;
+	}
+	#n_23 {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_cr {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_cr {
+		filter: drop-shadow(2px 2px 14px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_ct {
+		fill: url(#Rectangle_WS_ct);
+	}
+	.Rectangle_WS_ct {
+		filter: drop-shadow(-2px -2px 14px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1_cu {
+		position: absolute;
+		width: 70.25px;
+		height: 67px;
+		left: 3.875px;
+		top: 16px;
+		overflow: hidden;
+	}
+	#Group {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#n_12 {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12 {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_cx {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 31px;
+		overflow: visible;
+	}
+	#n_12_cy {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_cy {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_cz {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 56px;
+		overflow: visible;
+	}
+	#n_12_c {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_c {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Text_c {
+		left: 52px;
+		top: 87px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_da {
+		left: 57px;
+		top: 109px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_db {
+		left: 62px;
+		top: 134px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_dc {
+		left: 57px;
+		top: 156px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Credit_cards_dl {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 243px;
+		top: 80px;
+		overflow: visible;
+	}
+	#n_23_dm {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_dn {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_dn {
+		filter: drop-shadow(2px 2px 14px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_dp {
+		fill: url(#Rectangle_WS_dp);
+	}
+	.Rectangle_WS_dp {
+		filter: drop-shadow(-2px -2px 14px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1_dq {
+		position: absolute;
+		width: 70.25px;
+		height: 67px;
+		left: 3.875px;
+		top: 16px;
+		overflow: hidden;
+	}
+	#Group_dr {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#n_12_ds {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_ds {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_dt {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 31px;
+		overflow: visible;
+	}
+	#n_12_du {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_du {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_dv {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 56px;
+		overflow: visible;
+	}
+	#n_12_dw {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_dw {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Text_dx {
+		left: 252px;
+		top: 87px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_dy {
+		left: 257px;
+		top: 109px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_dz {
+		left: 262px;
+		top: 134px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_d {
+		left: 257px;
+		top: 156px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Credit_cards_dl {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 243px;
+		top: 80px;
+		overflow: visible;
+	}
+	#n_23_dm {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_dn {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_dn {
+		filter: drop-shadow(2px 2px 14px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_dp {
+		fill: url(#Rectangle_WS_dp);
+	}
+	.Rectangle_WS_dp {
+		filter: drop-shadow(-2px -2px 14px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1_dq {
+		position: absolute;
+		width: 70.25px;
+		height: 67px;
+		left: 3.875px;
+		top: 16px;
+		overflow: hidden;
+	}
+	#Group_dr {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#n_12_ds {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_ds {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_dt {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 31px;
+		overflow: visible;
+	}
+	#n_12_du {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_du {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_dv {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 56px;
+		overflow: visible;
+	}
+	#n_12_dw {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_dw {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Text_dx {
+		left: 252px;
+		top: 87px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_dy {
+		left: 257px;
+		top: 109px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_dz {
+		left: 262px;
+		top: 134px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_d {
+		left: 257px;
+		top: 156px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Credit_cards_d {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 140px;
+		top: 122px;
+		overflow: visible;
+	}
+	#n_23_d {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_d {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_d {
+		filter: drop-shadow(2px 2px 14px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_ea {
+		fill: url(#Rectangle_WS_ea);
+	}
+	.Rectangle_WS_ea {
+		filter: drop-shadow(-2px -2px 14px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1_d {
+		position: absolute;
+		width: 70.25px;
+		height: 67px;
+		left: 3.875px;
+		top: 16px;
+		overflow: hidden;
+	}
+	#Group_d {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#n_12_d {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_d {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_ea {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 31px;
+		overflow: visible;
+	}
+	#n_12_ea {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_ea {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_eb {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 56px;
+		overflow: visible;
+	}
+	#n_12_ec {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_ec {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Text_ed {
+		left: 149px;
+		top: 129px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_ee {
+		left: 154px;
+		top: 151px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_ef {
+		left: 159px;
+		top: 176px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_eg {
+		left: 154px;
+		top: 198px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Credit_cards_eh {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 140px;
+		top: 252px;
+		overflow: visible;
+	}
+	#n_23_ei {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_ej {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_ej {
+		filter: drop-shadow(2px 2px 14px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_el {
+		fill: url(#Rectangle_WS_el);
+	}
+	.Rectangle_WS_el {
+		filter: drop-shadow(-2px -2px 14px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1_em {
+		position: absolute;
+		width: 70.25px;
+		height: 67px;
+		left: 3.875px;
+		top: 16px;
+		overflow: hidden;
+	}
+	#Group_en {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#n_12_eo {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_eo {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_ep {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 31px;
+		overflow: visible;
+	}
+	#n_12_eq {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_eq {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_er {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 56px;
+		overflow: visible;
+	}
+	#n_12_es {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_es {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Text_et {
+		left: 149px;
+		top: 259px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_eu {
+		left: 154px;
+		top: 281px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_ev {
+		left: 159px;
+		top: 306px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_ew {
+		left: 154px;
+		top: 328px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Credit_cards_ex {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 43px;
+		top: 223px;
+		overflow: visible;
+	}
+	#n_23_ey {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_ez {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_ez {
+		filter: drop-shadow(2px 2px 14px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_fa {
+		fill: url(#Rectangle_WS_fa);
+	}
+	.Rectangle_WS_fa {
+		filter: drop-shadow(-2px -2px 14px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1_e {
+		position: absolute;
+		width: 70.25px;
+		height: 67px;
+		left: 3.875px;
+		top: 16px;
+		overflow: hidden;
+	}
+	#Group_e {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#n_12_e {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_e {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_fa {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 31px;
+		overflow: visible;
+	}
+	#n_12_fa {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_fa {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_fb {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 56px;
+		overflow: visible;
+	}
+	#n_12_fb {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_fb {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Text_e {
+		left: 52px;
+		top: 230px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_fa {
+		left: 57px;
+		top: 252px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_fb {
+		left: 62px;
+		top: 277px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_fc {
+		left: 57px;
+		top: 299px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Credit_cards_fd {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 243px;
+		top: 223px;
+		overflow: visible;
+	}
+	#n_23_fe {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_ff {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_ff {
+		filter: drop-shadow(2px 2px 14px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_fh {
+		fill: url(#Rectangle_WS_fh);
+	}
+	.Rectangle_WS_fh {
+		filter: drop-shadow(-2px -2px 14px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1_fi {
+		position: absolute;
+		width: 70.25px;
+		height: 67px;
+		left: 3.875px;
+		top: 16px;
+		overflow: hidden;
+	}
+	#Group_fj {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#n_12_fk {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_fk {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_fl {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 31px;
+		overflow: visible;
+	}
+	#n_12_fm {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_fm {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_fn {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 56px;
+		overflow: visible;
+	}
+	#n_12_fo {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_fo {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Text_fp {
+		left: 252px;
+		top: 230px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_fq {
+		left: 257px;
+		top: 252px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_fr {
+		left: 262px;
+		top: 277px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_fs {
+		left: 257px;
+		top: 299px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Credit_cards_ft {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 264px;
+		top: 341px;
+		overflow: visible;
+	}
+	#n_23_fu {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_fv {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_fv {
+		filter: drop-shadow(2px 2px 14px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_fx {
+		fill: url(#Rectangle_WS_fx);
+	}
+	.Rectangle_WS_fx {
+		filter: drop-shadow(-2px -2px 14px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1_fy {
+		position: absolute;
+		width: 70.25px;
+		height: 67px;
+		left: 3.875px;
+		top: 16px;
+		overflow: hidden;
+	}
+	#Group_fz {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#n_12_f {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_f {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_f {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 31px;
+		overflow: visible;
+	}
+	#n_12_ga {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_ga {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_ga {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 56px;
+		overflow: visible;
+	}
+	#n_12_gb {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_gb {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Text_f {
+		left: 273px;
+		top: 348px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_ga {
+		left: 278px;
+		top: 370px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_gb {
+		left: 283px;
+		top: 395px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_gc {
+		left: 278px;
+		top: 417px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Credit_cards_f {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 6px;
+		top: 341px;
+		overflow: visible;
+	}
+	#n_23_ga {
+		position: absolute;
+		width: 78px;
+		height: 93px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_gb {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_gb {
+		filter: drop-shadow(2px 2px 14px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_gd {
+		fill: url(#Rectangle_WS_gd);
+	}
+	.Rectangle_WS_gd {
+		filter: drop-shadow(-2px -2px 14px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		height: 135px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_1_ge {
+		position: absolute;
+		width: 70.25px;
+		height: 67px;
+		left: 3.875px;
+		top: 16px;
+		overflow: hidden;
+	}
+	#Group_gf {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 6px;
+		overflow: visible;
+	}
+	#n_12_gg {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_gg {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_gh {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 31px;
+		overflow: visible;
+	}
+	#n_12_gi {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_gi {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_gj {
+		position: absolute;
+		width: 61.25px;
+		height: 1px;
+		left: 4.5px;
+		top: 56px;
+		overflow: visible;
+	}
+	#n_12_gk {
+		opacity: 0.4;
+		fill: transparent;
+		stroke: rgba(87,95,107,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_12_gk {
+		filter: drop-shadow(0px -1px 3px rgba(0, 0, 0, 0.161));
+		overflow: visible;
+		position: absolute;
+		width: 70.25px;
+		height: 10px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Text_gl {
+		left: 15px;
+		top: 348px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_gm {
+		left: 20px;
+		top: 370px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_gn {
+		left: 25px;
+		top: 395px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#Text_go {
+		left: 20px;
+		top: 417px;
+		position: absolute;
+		overflow: visible;
+		width: 51px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(87,95,107,1);
+	}
+	#zj4 {
+		position: absolute;
+		width: 21px;
+		height: 21px;
+		left: 257px;
+		top: 679px;
+		overflow: visible;
+	}
+	#n_82 {
+		position: absolute;
+		width: 346px;
+		height: 25px;
+		left: 20px;
+		top: 64px;
+		overflow: visible;
+	}
+	#Playlist_button {
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		left: 321px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Component_1_-_button {
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_gt {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_gt {
+		filter: drop-shadow(3px 3px 20px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 85px;
+		height: 85px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_gv {
+		fill: url(#Rectangle_WS_gv);
+	}
+	.Rectangle_WS_gv {
+		filter: drop-shadow(-4px -4px 30px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 115px;
+		height: 115px;
+		left: 0px;
+		top: 0px;
+	}
+	#Icon_material-playlist-play_gx {
+		fill: url(#Icon_material-playlist-play_gx);
+	}
+	.Icon_material-playlist-play_gx {
+		overflow: visible;
+		position: absolute;
+		width: 9.974px;
+		height: 6.982px;
+		left: 7.601px;
+		top: 8.915px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_81 {
+		position: absolute;
+		width: 142px;
+		height: 25px;
+		left: 166px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Component_2_-_Big_button {
+		position: absolute;
+		width: 142px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_g {
+		opacity: 0.8;
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_g {
+		filter: drop-shadow(3px 3px 20px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 202px;
+		height: 85px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_ha {
+		fill: url(#Rectangle_WS_ha);
+	}
+	.Rectangle_WS_ha {
+		filter: drop-shadow(-4px -4px 20px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 202px;
+		height: 85px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_7 {
+		opacity: 0.437;
+		fill: rgba(0,0,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_7 {
+		overflow: visible;
+		position: absolute;
+		width: 18px;
+		height: 16px;
+		transform: translate(0px, 0px) matrix(1,0,0,1,113,5) rotate(180deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#Text_g {
+		left: 41px;
+		top: 5px;
+		position: absolute;
+		overflow: visible;
+		width: 49px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(87,95,107,1);
+	}
+	#n_80 {
+		position: absolute;
+		width: 142px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Component_2_-_Big_button_g {
+		position: absolute;
+		width: 142px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_ha {
+		opacity: 0.8;
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_ha {
+		filter: drop-shadow(3px 3px 20px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 202px;
+		height: 85px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_hc {
+		fill: url(#Rectangle_WS_hc);
+	}
+	.Rectangle_WS_hc {
+		filter: drop-shadow(-4px -4px 20px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 202px;
+		height: 85px;
+		left: 0px;
+		top: 0px;
+	}
+	#n_8 {
+		opacity: 0.437;
+		fill: rgba(0,0,0,1);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_8 {
+		overflow: visible;
+		position: absolute;
+		width: 18px;
+		height: 16px;
+		transform: translate(0px, 0px) matrix(1,0,0,1,111,5) rotate(180deg);
+		transform-origin: center;
+		left: 0px;
+		top: 0px;
+	}
+	#n_-3-1-2_hb {
+		left: 35px;
+		top: 5px;
+		position: absolute;
+		overflow: visible;
+		width: 56px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(87,95,107,1);
+	}
+	#n_74 {
+		position: absolute;
+		width: 390px;
+		height: 56px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_22__1 {
+		position: absolute;
+		width: 390px;
+		height: 56px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_9 {
+		fill: rgba(236,238,242,1);
+	}
+	.n_9 {
+		filter: drop-shadow(0px 3px 6px rgba(8, 7, 7, 0.161));
+		position: absolute;
+		overflow: visible;
+		width: 408px;
+		height: 74px;
+		left: 0px;
+		top: 0px;
+	}
+	#FIFA_TACTICS_COMMUNITY {
+		left: 20px;
+		top: 16px;
+		position: absolute;
+		overflow: visible;
+		width: 234px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Phosphate;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		color: rgba(87,95,107,1);
+	}
+	#n_23__1 {
+		position: absolute;
+		width: 448.5px;
+		height: 813px;
+		left: 349.5px;
+		top: 17px;
+		overflow: visible;
+	}
+	#n_77 {
+		position: absolute;
+		width: 26px;
+		height: 22px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_17 {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_17 {
+		overflow: visible;
+		position: absolute;
+		width: 26px;
+		height: 1px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_17_hj {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_17_hj {
+		overflow: visible;
+		position: absolute;
+		width: 19px;
+		height: 1px;
+		left: 7px;
+		top: 11px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_19 {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_19 {
+		overflow: visible;
+		position: absolute;
+		width: 11.53px;
+		height: 1px;
+		left: 14.47px;
+		top: 22px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_76 {
+		position: absolute;
+		width: 377px;
+		height: 768px;
+		left: 71.5px;
+		top: 45px;
+		overflow: visible;
+	}
+	#n_34 {
+		position: absolute;
+		width: 377px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_32 {
+		position: absolute;
+		width: 377px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_27 {
+		position: absolute;
+		width: 377px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#n_26 {
+		position: absolute;
+		width: 377px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rectangle_DS_hq {
+		fill: rgba(237,238,242,1);
+	}
+	.Rectangle_DS_hq {
+		filter: drop-shadow(2px 2px 14px rgba(36, 65, 93, 0.302));
+		position: absolute;
+		overflow: visible;
+		width: 419px;
+		height: 810px;
+		left: 0px;
+		top: 0px;
+	}
+	#Rectangle_WS_hr {
+		fill: rgba(8,1,1,0.255);
+	}
+	.Rectangle_WS_hr {
+		filter: drop-shadow(-2px -2px 14px rgba(255, 255, 255, 1));
+		position: absolute;
+		overflow: visible;
+		width: 419px;
+		height: 810px;
+		left: 0px;
+		top: 0px;
+	}
+	#venice {
+		fill: rgba(113,112,150,0.8);
+	}
+	.venice {
+		position: absolute;
+		overflow: visible;
+		width: 377px;
+		height: 126px;
+		left: 0px;
+		top: 0px;
+	}
+	#zj4_ht {
+		position: absolute;
+		width: 76px;
+		height: 76px;
+		left: 19px;
+		top: 20px;
+		overflow: visible;
+	}
+	#Text_hu {
+		left: 118px;
+		top: 20px;
+		position: absolute;
+		overflow: visible;
+		width: 82px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 27px;
+		color: rgba(255,255,255,1);
+	}
+	#n_0221022 {
+		left: 205px;
+		top: 101px;
+		position: absolute;
+		overflow: visible;
+		width: 149px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+	}
+	#n__hw {
+		left: 129px;
+		top: 66px;
+		position: absolute;
+		overflow: visible;
+		width: 93px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#n__hx {
+		left: 241px;
+		top: 66px;
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#n_18 {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_18 {
+		overflow: visible;
+		position: absolute;
+		width: 326px;
+		height: 1px;
+		left: 27.5px;
+		top: 188.454px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_18_hz {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_18_hz {
+		overflow: visible;
+		position: absolute;
+		width: 326px;
+		height: 1px;
+		left: 27.5px;
+		top: 243.454px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_18_h {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_18_h {
+		overflow: visible;
+		position: absolute;
+		width: 326px;
+		height: 1px;
+		left: 27.5px;
+		top: 306.473px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#n_18_ia {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_18_ia {
+		overflow: visible;
+		position: absolute;
+		width: 326px;
+		height: 1px;
+		left: 27.5px;
+		top: 365.482px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#ABOUT {
+		opacity: 0.239;
+		left: 40px;
+		top: 144px;
+		position: absolute;
+		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 31px;
+		color: rgba(0,0,0,1);
+	}
+	#MYPAGE {
+		opacity: 0.239;
+		left: 40px;
+		top: 198px;
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		white-space: nowrap;
+		transition: all 0.30000001192092896s snap;
+		--web-animation: fadein 0.30000001192092896s snap;
+		--web-action-type: page;
+		--web-action-target: ________1.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 31px;
+		color: rgba(0,0,0,1);
+	}
+	#SEARCH {
+		opacity: 0.239;
+		left: 40px;
+		top: 258px;
+		position: absolute;
+		overflow: visible;
+		width: 120px;
+		white-space: nowrap;
+		transition: all 0.30000001192092896s snap;
+		--web-animation: fadein 0.30000001192092896s snap;
+		--web-action-type: page;
+		--web-action-target: ____.html;
+		cursor: pointer;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 31px;
+		color: rgba(0,0,0,1);
+	}
+	#LOGOUT {
+		opacity: 0.239;
+		left: 40px;
+		top: 318px;
+		position: absolute;
+		overflow: visible;
+		width: 126px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Sofia Pro;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 31px;
+		color: rgba(0,0,0,1);
+	}
+</style>
+<script id="applicationScript">
+///////////////////////////////////////
+// INITIALIZATION
+///////////////////////////////////////
+
+/**
+ * Functionality for scaling, showing by media query, and navigation between multiple pages on a single page. 
+ * Code subject to change.
+ **/
+
+if (window.console==null) { window["console"] = { log : function() {} } }; // some browsers do not set console
+
+window.application = new Application();
+</script>
+</head>
+<body>
+<div id="TOP">
+	<div id="n_35">
+		<div id="n_84">
+			<div id="Big_info_card">
+				<div id="Big_info_card_r">
+					<div id="n_30">
+						<svg class="Rectangle_DS">
+							<rect id="Rectangle_DS" rx="20" ry="20" x="0" y="0" width="357" height="714">
+							</rect>
+						</svg>
+						<svg class="Rectangle_WS_v" viewBox="0 0 358 713.812">
+							<linearGradient id="Rectangle_WS_v" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+								<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+								<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+							</linearGradient>
+							<path id="Rectangle_WS_v" d="M 16 0 L 342 0 C 350.8365478515625 0 358 7.043188571929932 358 15.73140335083008 L 358 698.0809936523438 C 358 706.7692260742188 350.8365478515625 713.8124389648438 342 713.8124389648438 L 16 713.8124389648438 C 7.163443565368652 713.8124389648438 0 706.7692260742188 0 698.0809936523438 L 0 15.73140335083008 C 0 7.043188571929932 7.163443565368652 0 16 0 Z">
+							</path>
+						</svg>
+					</div>
+					<div onclick="application.goToTargetView(event)" id="Voice_guide_button">
+						<svg class="Rectangle_DS_x">
+							<rect id="Rectangle_DS_x" rx="15" ry="15" x="0" y="0" width="96" height="30">
+							</rect>
+						</svg>
+						<svg class="Rectangle_WS_z">
+							<linearGradient id="Rectangle_WS_z" spreadMethod="pad" x1="1.249" x2="-0.771" y1="1" y2="-0.656">
+								<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+								<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+							</linearGradient>
+							<rect id="Rectangle_WS_z" rx="15" ry="15" x="0" y="0" width="96" height="30">
+							</rect>
+						</svg>
+						<div id="n_1">
+							<div id="n_">
+								<span> ロビン</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="CF20">
+					<span>CF20連勝達成フォーメーション</span>
+				</div>
+				<div id="n_0221021">
+					<span>2022/10/21</span>
+				</div>
+				<div id="n_-3-1-2">
+					<span>4-3-1-2</span>
+				</div>
+			</div>
+			<div id="Like_button">
+				<svg class="Rectangle_DS_">
+					<rect id="Rectangle_DS_" rx="14.5" ry="14.5" x="0" y="0" width="29" height="29">
+					</rect>
+				</svg>
+				<svg class="Rectangle_WS_ba">
+					<linearGradient id="Rectangle_WS_ba" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+						<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+					</linearGradient>
+					<rect id="Rectangle_WS_ba" rx="14.5" ry="14.5" x="0" y="0" width="29" height="29">
+					</rect>
+				</svg>
+				<div id="like-svgrepo-com">
+					<div id="n_3">
+						<div id="n_2">
+							<svg class="n_2_bd" viewBox="0 167.256 2.525 8.417">
+								<linearGradient id="n_2_bd" spreadMethod="pad" x1="1.507" x2="1.338" y1="0.5" y2="-0.195">
+									<stop offset="0" stop-color="#4475be" stop-opacity="1"></stop>
+									<stop offset="1" stop-color="#193661" stop-opacity="1"></stop>
+								</linearGradient>
+								<path id="n_2_bd" d="M 2.104280948638916 167.2559967041016 L 0.4208662807941437 167.2559967041016 C 0.1894351541996002 167.2559967041016 0 167.4444580078125 0 167.6768341064453 L 0 175.2522583007812 C 0 175.4844970703125 0.1886042803525925 175.6730346679688 0.4208662807941437 175.6730346679688 L 2.104280948638916 175.6730346679688 C 2.336543083190918 175.6730346679688 2.525147676467896 175.4844970703125 2.525147676467896 175.2522583007812 L 2.525147676467896 167.6768341064453 C 2.525146961212158 167.4444580078125 2.335686922073364 167.2559967041016 2.104280948638916 167.2559967041016 Z">
+								</path>
+							</svg>
+						</div>
+					</div>
+					<div id="n_5">
+						<div id="n_4">
+							<svg class="n_3_bh" viewBox="133.726 10.433 9.524 10.959">
+								<linearGradient id="n_3_bh" spreadMethod="pad" x1="1.507" x2="1.338" y1="0.5" y2="-0.195">
+									<stop offset="0" stop-color="#4475be" stop-opacity="1"></stop>
+									<stop offset="1" stop-color="#193661" stop-opacity="1"></stop>
+								</linearGradient>
+								<path id="n_3_bh" d="M 142.1991577148438 14.1884708404541 C 142.1313781738281 14.17755222320557 138.9578247070312 14.1884708404541 138.9578247070312 14.1884708404541 L 139.4011077880859 13.03838062286377 C 139.7069702148438 12.24405384063721 139.5089416503906 11.03120613098145 138.6602783203125 10.60001754760742 C 138.3839721679688 10.45960807800293 137.9978942871094 10.38909244537354 137.6866149902344 10.46360683441162 C 137.5081176757812 10.50632476806641 137.3512268066406 10.61871814727783 137.2577209472656 10.76930332183838 C 137.1501922607422 10.94249153137207 137.1613006591797 11.14465427398682 137.1230163574219 11.33668518066406 C 137.0258941650391 11.82376003265381 136.7838897705078 12.28686618804932 136.4091186523438 12.63446521759033 C 135.7557067871094 13.24051761627197 133.7259368896484 14.98892688751221 133.7259368896484 14.98892688751221 L 133.7259368896484 21.39281463623047 L 140.7402038574219 21.39281463623047 C 141.6866760253906 21.39334106445312 142.3069458007812 20.38816070556641 141.8401184082031 19.60300636291504 C 142.3965759277344 19.26407623291016 142.5868835449219 18.5501766204834 142.260986328125 18.00204658508301 C 142.8174591064453 17.66311645507812 143.0077514648438 16.94921875 142.6818542480469 16.40108871459961 C 143.6419677734375 15.81629657745361 143.3209838867188 14.36891460418701 142.1991577148438 14.1884708404541 Z">
+								</path>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="Bookmark_button">
+				<svg class="Rectangle_DS_bj">
+					<rect id="Rectangle_DS_bj" rx="14.5" ry="14.5" x="0" y="0" width="30" height="29">
+					</rect>
+				</svg>
+				<svg class="Rectangle_WS_bl">
+					<linearGradient id="Rectangle_WS_bl" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+						<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+					</linearGradient>
+					<rect id="Rectangle_WS_bl" rx="14.5" ry="14.5" x="0" y="0" width="30" height="29">
+					</rect>
+				</svg>
+				<svg class="Icon_awesome-bookmark_bn" viewBox="0 0 8.734 11.645">
+					<linearGradient id="Icon_awesome-bookmark_bn" spreadMethod="pad" x1="0.657" x2="0" y1="0.6" y2="-0.169">
+						<stop offset="0" stop-color="#40bb50" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#205e28" stop-opacity="1"></stop>
+					</linearGradient>
+					<path id="Icon_awesome-bookmark_bn" d="M 0 11.64473724365234 L 0 1.091694116592407 C 0 0.4887605607509613 0.4887605607509613 0 1.091694116592407 0 L 7.64185905456543 0 C 8.244792938232422 0 8.733552932739258 0.4887605607509613 8.733552932739258 1.091694116592407 L 8.733552932739258 11.64473724365234 L 4.366776466369629 9.097451210021973 L 0 11.64473724365234 Z">
+					</path>
+				</svg>
+			</div>
+			<div id="DEFENSE">
+				<span>DEFENSE</span>
+			</div>
+			<div id="Text">
+				<span>幅</span>
+			</div>
+			<div id="Slider">
+				<img id="n_4_br" src="n_4_br.png" srcset="n_4_br.png 1x, n_4_br@2x.png 2x">
+					
+				</svg>
+				<svg class="n_4_bt">
+					<linearGradient id="n_4_bt" spreadMethod="pad" x1="-0.067" x2="0.95" y1="0.5" y2="0.5">
+						<stop offset="0" stop-color="#fea565" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#fb7900" stop-opacity="1"></stop>
+					</linearGradient>
+					<rect id="n_4_bt" rx="4.5" ry="4.5" x="0" y="0" width="149" height="9">
+					</rect>
+				</svg>
+			</div>
+			<div id="n_0">
+				<span>70</span>
+			</div>
+			<div id="Text_bv">
+				<span>バランス</span>
+			</div>
+			<div id="OFFENSE">
+				<span>OFFENSE</span>
+			</div>
+			<div id="Text_bx">
+				<span>幅</span>
+			</div>
+			<div id="Slider_by">
+				<img id="n_4_bz" src="n_4_bz.png" srcset="n_4_bz.png 1x, n_4_bz@2x.png 2x">
+					
+				</svg>
+				<svg class="n_4_ca">
+					<linearGradient id="n_4_ca" spreadMethod="pad" x1="-0.067" x2="0.95" y1="0.5" y2="0.5">
+						<stop offset="0" stop-color="#d591ff" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#b612ff" stop-opacity="1"></stop>
+					</linearGradient>
+					<rect id="n_4_ca" rx="4.5" ry="4.5" x="0" y="0" width="184" height="9">
+					</rect>
+				</svg>
+			</div>
+			<div id="n_0_b">
+				<span>80</span>
+			</div>
+			<div id="Text_b">
+				<span>高速ビルドアップ</span>
+			</div>
+			<div id="Text_ca">
+				<span>バランス</span>
+			</div>
+			<div id="PA">
+				<span>PA</span>
+			</div>
+			<div id="Slider_b">
+				<img id="n_4_cb" src="n_4_cb.png" srcset="n_4_cb.png 1x, n_4_cb@2x.png 2x">
+					
+				</svg>
+				<svg class="n_4_cd">
+					<linearGradient id="n_4_cd" spreadMethod="pad" x1="-0.067" x2="0.95" y1="0.5" y2="0.5">
+						<stop offset="0" stop-color="#fea565" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#fb7900" stop-opacity="1"></stop>
+					</linearGradient>
+					<rect id="n_4_cd" rx="4.5" ry="4.5" x="0" y="0" width="82" height="9">
+					</rect>
+				</svg>
+			</div>
+			<div id="n__ca">
+				<span>3</span>
+			</div>
+			<div id="Text_cb">
+				<span>深さ</span>
+			</div>
+			<div id="Slider_cc">
+				<img id="n_4_ce" src="n_4_ce.png" srcset="n_4_ce.png 1x, n_4_ce@2x.png 2x">
+					
+				</svg>
+				<svg class="n_4_cg">
+					<linearGradient id="n_4_cg" spreadMethod="pad" x1="-0.067" x2="0.95" y1="0.5" y2="0.5">
+						<stop offset="0" stop-color="#deff86" stop-opacity="1"></stop>
+						<stop offset="0.2217" stop-color="#cfff64" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#94fdc0" stop-opacity="1"></stop>
+					</linearGradient>
+					<rect id="n_4_cg" rx="4.5" ry="4.5" x="0" y="0" width="114" height="9">
+					</rect>
+				</svg>
+			</div>
+			<div id="n_0_cg">
+				<span>50</span>
+			</div>
+			<div id="n__button_pressed">
+				<img id="n__button_pressed_ci" src="n__button_pressed_ci.png" srcset="n__button_pressed_ci.png 1x, n__button_pressed_ci@2x.png 2x">
+					
+				</svg>
+				<svg class="n_3_cj">
+					<rect id="n_3_cj" rx="0" ry="0" x="0" y="0" width="24" height="7">
+					</rect>
+				</svg>
+			</div>
+			<div id="n__button_pressed_ck">
+				<img id="n__button_pressed_cl" src="n__button_pressed_cl.png" srcset="n__button_pressed_cl.png 1x, n__button_pressed_cl@2x.png 2x">
+					
+				</svg>
+				<svg class="n_3_cm">
+					<rect id="n_3_cm" rx="0" ry="0" x="0" y="0" width="24" height="7">
+					</rect>
+				</svg>
+			</div>
+			<div id="CB">
+				<span>CB</span>
+			</div>
+			<div id="CB_co">
+				<span>CB</span>
+			</div>
+			<div id="Credit_cards">
+				<div id="n_23">
+					<svg class="Rectangle_DS_cr">
+						<rect id="Rectangle_DS_cr" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+					<svg class="Rectangle_WS_ct">
+						<linearGradient id="Rectangle_WS_ct" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+							<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+							<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+						</linearGradient>
+						<rect id="Rectangle_WS_ct" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+				</div>
+				<div id="n_1_cu">
+					<div id="Group" class="">
+						<svg class="n_12" viewBox="0 0 61.25 1">
+							<path id="n_12" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_cx" class="">
+						<svg class="n_12_cy" viewBox="0 0 61.25 1">
+							<path id="n_12_cy" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_cz" class="">
+						<svg class="n_12_c" viewBox="0 0 61.25 1">
+							<path id="n_12_c" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="Text_c">
+				<span>ワイドに開く</span>
+			</div>
+			<div id="Text_da">
+				<span>裏に抜ける</span>
+			</div>
+			<div id="Text_db">
+				<span>初期設定</span>
+			</div>
+			<div id="Text_dc">
+				<span>前線を張る</span>
+			</div>
+			<div id="Credit_cards_dl">
+				<div id="n_23_dm">
+					<svg class="Rectangle_DS_dn">
+						<rect id="Rectangle_DS_dn" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+					<svg class="Rectangle_WS_dp">
+						<linearGradient id="Rectangle_WS_dp" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+							<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+							<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+						</linearGradient>
+						<rect id="Rectangle_WS_dp" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+				</div>
+				<div id="n_1_dq">
+					<div id="Group_dr" class="">
+						<svg class="n_12_ds" viewBox="0 0 61.25 1">
+							<path id="n_12_ds" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_dt" class="">
+						<svg class="n_12_du" viewBox="0 0 61.25 1">
+							<path id="n_12_du" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_dv" class="">
+						<svg class="n_12_dw" viewBox="0 0 61.25 1">
+							<path id="n_12_dw" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="Text_dx">
+				<span>ワイドに開く</span>
+			</div>
+			<div id="Text_dy">
+				<span>裏に抜ける</span>
+			</div>
+			<div id="Text_dz">
+				<span>初期設定</span>
+			</div>
+			<div id="Text_d">
+				<span>前線を張る</span>
+			</div>
+			<div id="Credit_cards_dl">
+				<div id="n_23_dm">
+					<svg class="Rectangle_DS_dn">
+						<rect id="Rectangle_DS_dn" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+					<svg class="Rectangle_WS_dp">
+						<linearGradient id="Rectangle_WS_dp" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+							<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+							<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+						</linearGradient>
+						<rect id="Rectangle_WS_dp" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+				</div>
+				<div id="n_1_dq">
+					<div id="Group_dr" class="">
+						<svg class="n_12_ds" viewBox="0 0 61.25 1">
+							<path id="n_12_ds" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_dt" class="">
+						<svg class="n_12_du" viewBox="0 0 61.25 1">
+							<path id="n_12_du" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_dv" class="">
+						<svg class="n_12_dw" viewBox="0 0 61.25 1">
+							<path id="n_12_dw" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="Text_dx">
+				<span>ワイドに開く</span>
+			</div>
+			<div id="Text_dy">
+				<span>裏に抜ける</span>
+			</div>
+			<div id="Text_dz">
+				<span>初期設定</span>
+			</div>
+			<div id="Text_d">
+				<span>前線を張る</span>
+			</div>
+			<div id="Credit_cards_d">
+				<div id="n_23_d">
+					<svg class="Rectangle_DS_d">
+						<rect id="Rectangle_DS_d" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+					<svg class="Rectangle_WS_ea">
+						<linearGradient id="Rectangle_WS_ea" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+							<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+							<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+						</linearGradient>
+						<rect id="Rectangle_WS_ea" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+				</div>
+				<div id="n_1_d">
+					<div id="Group_d" class="">
+						<svg class="n_12_d" viewBox="0 0 61.25 1">
+							<path id="n_12_d" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_ea" class="">
+						<svg class="n_12_ea" viewBox="0 0 61.25 1">
+							<path id="n_12_ea" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_eb" class="">
+						<svg class="n_12_ec" viewBox="0 0 61.25 1">
+							<path id="n_12_ec" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="Text_ed">
+				<span>ワイドに開く</span>
+			</div>
+			<div id="Text_ee">
+				<span>裏に抜ける</span>
+			</div>
+			<div id="Text_ef">
+				<span>初期設定</span>
+			</div>
+			<div id="Text_eg">
+				<span>前線を張る</span>
+			</div>
+			<div id="Credit_cards_eh">
+				<div id="n_23_ei">
+					<svg class="Rectangle_DS_ej">
+						<rect id="Rectangle_DS_ej" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+					<svg class="Rectangle_WS_el">
+						<linearGradient id="Rectangle_WS_el" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+							<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+							<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+						</linearGradient>
+						<rect id="Rectangle_WS_el" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+				</div>
+				<div id="n_1_em">
+					<div id="Group_en" class="">
+						<svg class="n_12_eo" viewBox="0 0 61.25 1">
+							<path id="n_12_eo" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_ep" class="">
+						<svg class="n_12_eq" viewBox="0 0 61.25 1">
+							<path id="n_12_eq" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_er" class="">
+						<svg class="n_12_es" viewBox="0 0 61.25 1">
+							<path id="n_12_es" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="Text_et">
+				<span>ワイドに開く</span>
+			</div>
+			<div id="Text_eu">
+				<span>裏に抜ける</span>
+			</div>
+			<div id="Text_ev">
+				<span>初期設定</span>
+			</div>
+			<div id="Text_ew">
+				<span>前線を張る</span>
+			</div>
+			<div id="Credit_cards_ex">
+				<div id="n_23_ey">
+					<svg class="Rectangle_DS_ez">
+						<rect id="Rectangle_DS_ez" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+					<svg class="Rectangle_WS_fa">
+						<linearGradient id="Rectangle_WS_fa" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+							<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+							<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+						</linearGradient>
+						<rect id="Rectangle_WS_fa" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+				</div>
+				<div id="n_1_e">
+					<div id="Group_e" class="">
+						<svg class="n_12_e" viewBox="0 0 61.25 1">
+							<path id="n_12_e" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_fa" class="">
+						<svg class="n_12_fa" viewBox="0 0 61.25 1">
+							<path id="n_12_fa" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_fb" class="">
+						<svg class="n_12_fb" viewBox="0 0 61.25 1">
+							<path id="n_12_fb" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="Text_e">
+				<span>ワイドに開く</span>
+			</div>
+			<div id="Text_fa">
+				<span>裏に抜ける</span>
+			</div>
+			<div id="Text_fb">
+				<span>初期設定</span>
+			</div>
+			<div id="Text_fc">
+				<span>前線を張る</span>
+			</div>
+			<div id="Credit_cards_fd">
+				<div id="n_23_fe">
+					<svg class="Rectangle_DS_ff">
+						<rect id="Rectangle_DS_ff" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+					<svg class="Rectangle_WS_fh">
+						<linearGradient id="Rectangle_WS_fh" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+							<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+							<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+						</linearGradient>
+						<rect id="Rectangle_WS_fh" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+				</div>
+				<div id="n_1_fi">
+					<div id="Group_fj" class="">
+						<svg class="n_12_fk" viewBox="0 0 61.25 1">
+							<path id="n_12_fk" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_fl" class="">
+						<svg class="n_12_fm" viewBox="0 0 61.25 1">
+							<path id="n_12_fm" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_fn" class="">
+						<svg class="n_12_fo" viewBox="0 0 61.25 1">
+							<path id="n_12_fo" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="Text_fp">
+				<span>ワイドに開く</span>
+			</div>
+			<div id="Text_fq">
+				<span>裏に抜ける</span>
+			</div>
+			<div id="Text_fr">
+				<span>初期設定</span>
+			</div>
+			<div id="Text_fs">
+				<span>前線を張る</span>
+			</div>
+			<div id="Credit_cards_ft">
+				<div id="n_23_fu">
+					<svg class="Rectangle_DS_fv">
+						<rect id="Rectangle_DS_fv" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+					<svg class="Rectangle_WS_fx">
+						<linearGradient id="Rectangle_WS_fx" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+							<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+							<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+						</linearGradient>
+						<rect id="Rectangle_WS_fx" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+				</div>
+				<div id="n_1_fy">
+					<div id="Group_fz" class="">
+						<svg class="n_12_f" viewBox="0 0 61.25 1">
+							<path id="n_12_f" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_f" class="">
+						<svg class="n_12_ga" viewBox="0 0 61.25 1">
+							<path id="n_12_ga" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_ga" class="">
+						<svg class="n_12_gb" viewBox="0 0 61.25 1">
+							<path id="n_12_gb" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="Text_f">
+				<span>ワイドに開く</span>
+			</div>
+			<div id="Text_ga">
+				<span>裏に抜ける</span>
+			</div>
+			<div id="Text_gb">
+				<span>初期設定</span>
+			</div>
+			<div id="Text_gc">
+				<span>前線を張る</span>
+			</div>
+			<div id="Credit_cards_f">
+				<div id="n_23_ga">
+					<svg class="Rectangle_DS_gb">
+						<rect id="Rectangle_DS_gb" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+					<svg class="Rectangle_WS_gd">
+						<linearGradient id="Rectangle_WS_gd" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+							<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+							<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+						</linearGradient>
+						<rect id="Rectangle_WS_gd" rx="12" ry="12" x="0" y="0" width="78" height="93">
+						</rect>
+					</svg>
+				</div>
+				<div id="n_1_ge">
+					<div id="Group_gf" class="">
+						<svg class="n_12_gg" viewBox="0 0 61.25 1">
+							<path id="n_12_gg" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_gh" class="">
+						<svg class="n_12_gi" viewBox="0 0 61.25 1">
+							<path id="n_12_gi" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+					<div id="Group_gj" class="">
+						<svg class="n_12_gk" viewBox="0 0 61.25 1">
+							<path id="n_12_gk" d="M 0 0 L 61.2503662109375 0">
+							</path>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div id="Text_gl">
+				<span>ワイドに開く</span>
+			</div>
+			<div id="Text_gm">
+				<span>裏に抜ける</span>
+			</div>
+			<div id="Text_gn">
+				<span>初期設定</span>
+			</div>
+			<div id="Text_go">
+				<span>前線を張る</span>
+			</div>
+		</div>
+		<img id="zj4" src="zj4.png" srcset="zj4.png 1x, zj4@2x.png 2x">
+			
+	</div>
+	<div id="n_82">
+		<div id="Playlist_button">
+			<div id="Component_1_-_button" class="Component_1___button">
+				<svg class="Rectangle_DS_gt">
+					<rect id="Rectangle_DS_gt" rx="12.5" ry="12.5" x="0" y="0" width="25" height="25">
+					</rect>
+				</svg>
+				<svg class="Rectangle_WS_gv">
+					<linearGradient id="Rectangle_WS_gv" spreadMethod="pad" x1="0.962" x2="-0.282" y1="0.962" y2="-0.104">
+						<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+					</linearGradient>
+					<rect id="Rectangle_WS_gv" rx="12.5" ry="12.5" x="0" y="0" width="25" height="25">
+					</rect>
+				</svg>
+			</div>
+			<svg class="Icon_material-playlist-play_gx" viewBox="3 7.5 9.974 6.982">
+				<linearGradient id="Icon_material-playlist-play_gx" spreadMethod="pad" x1="0.268" x2="0.268" y1="0.662" y2="0">
+					<stop offset="0" stop-color="#575f6b" stop-opacity="1"></stop>
+					<stop offset="1" stop-color="#2c3036" stop-opacity="1"></stop>
+				</linearGradient>
+				<path id="Icon_material-playlist-play_gx" d="M 11.4778995513916 9.494799613952637 L 3.000000238418579 9.494799613952637 L 3.000000238418579 10.49219989776611 L 11.4778995513916 10.49219989776611 L 11.4778995513916 9.494799613952637 Z M 11.4778995513916 7.500000953674316 L 3.000000238418579 7.500000953674316 L 3.000000238418579 8.497400283813477 L 11.4778995513916 8.497400283813477 L 11.4778995513916 7.500000953674316 Z M 3.000000238418579 12.48699951171875 L 9.483098983764648 12.48699951171875 L 9.483098983764648 11.48959922790527 L 3.000000238418579 11.48959922790527 L 3.000000238418579 12.48699951171875 Z M 10.48049926757812 11.48959922790527 L 10.48049926757812 14.48179912567139 L 12.9739990234375 12.9857006072998 L 10.48049926757812 11.48959922790527 Z">
+				</path>
+			</svg>
+		</div>
+		<div id="n_81">
+			<div id="Component_2_-_Big_button" class="Component_2___Big_button">
+				<svg class="Rectangle_DS_g">
+					<rect id="Rectangle_DS_g" rx="12.5" ry="12.5" x="0" y="0" width="142" height="25">
+					</rect>
+				</svg>
+				<svg class="Rectangle_WS_ha">
+					<linearGradient id="Rectangle_WS_ha" spreadMethod="pad" x1="1.249" x2="-0.771" y1="1" y2="-0.656">
+						<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+					</linearGradient>
+					<rect id="Rectangle_WS_ha" rx="12.5" ry="12.5" x="0" y="0" width="142" height="25">
+					</rect>
+				</svg>
+			</div>
+			<svg class="n_7" viewBox="0 0 18 16">
+				<path id="n_7" d="M 9 0 L 18 16 L 0 16 Z">
+				</path>
+			</svg>
+			<div id="Text_g">
+				<span>高評価</span>
+			</div>
+		</div>
+		<div id="n_80">
+			<div id="Component_2_-_Big_button_g" class="Component_2___Big_button">
+				<svg class="Rectangle_DS_ha">
+					<rect id="Rectangle_DS_ha" rx="12.5" ry="12.5" x="0" y="0" width="142" height="25">
+					</rect>
+				</svg>
+				<svg class="Rectangle_WS_hc">
+					<linearGradient id="Rectangle_WS_hc" spreadMethod="pad" x1="1.249" x2="-0.771" y1="1" y2="-0.656">
+						<stop offset="0" stop-color="#f2f3f6" stop-opacity="1"></stop>
+						<stop offset="1" stop-color="#e5e6ec" stop-opacity="1"></stop>
+					</linearGradient>
+					<rect id="Rectangle_WS_hc" rx="12.5" ry="12.5" x="0" y="0" width="142" height="25">
+					</rect>
+				</svg>
+			</div>
+			<svg class="n_8" viewBox="0 0 18 16">
+				<path id="n_8" d="M 9 0 L 18 16 L 0 16 Z">
+				</path>
+			</svg>
+			<div id="n_-3-1-2_hb">
+				<span>4-3-1-2</span>
+			</div>
+		</div>
+	</div>
+	<div id="n_74">
+		<div id="n_22__1" class="________22___1">
+			<svg class="n_9">
+				<rect id="n_9" rx="0" ry="0" x="0" y="0" width="390" height="56">
+				</rect>
+			</svg>
+			<div id="FIFA_TACTICS_COMMUNITY">
+				<span>FIFA TACTICS COMMUNITY</span>
+			</div>
+		</div>
+	</div>
+	<div id="n_23__1" class="________23___1">
+		<div id="n_77">
+			<svg class="n_17" viewBox="0 0 26 1">
+				<path id="n_17" d="M 0 0 L 26 0">
+				</path>
+			</svg>
+			<svg class="n_17_hj" viewBox="0 0 19 1">
+				<path id="n_17_hj" d="M 0 0 L 19 0">
+				</path>
+			</svg>
+			<svg class="n_19" viewBox="14.47 0 11.53 1">
+				<path id="n_19" d="M 14.46994018554688 0 L 26 0">
+				</path>
+			</svg>
+		</div>
+		<div id="n_76">
+			<div id="n_34">
+				<div id="n_32">
+					<div id="n_27">
+						<div id="n_26">
+							<svg class="Rectangle_DS_hq">
+								<rect id="Rectangle_DS_hq" rx="12" ry="12" x="0" y="0" width="377" height="768">
+								</rect>
+							</svg>
+							<svg class="Rectangle_WS_hr">
+								<rect id="Rectangle_WS_hr" rx="0" ry="0" x="0" y="0" width="377" height="768">
+								</rect>
+							</svg>
+						</div>
+						<svg class="venice">
+							<rect id="venice" rx="0" ry="0" x="0" y="0" width="377" height="126">
+							</rect>
+						</svg>
+					</div>
+				</div>
+				<img id="zj4_ht" src="zj4_ht.png" srcset="zj4_ht.png 1x, zj4_ht@2x.png 2x">
+					
+				<div id="Text_hu">
+					<span>ロビン</span>
+				</div>
+				<div id="n_0221022">
+					<span>登録日：2022/10/22</span>
+				</div>
+				<div id="n__hw">
+					<span>投稿数：9</span>
+				</div>
+				<div id="n__hx">
+					<span>いいね数：9</span>
+				</div>
+				<svg class="n_18" viewBox="0 0 326 1">
+					<path id="n_18" d="M 0 0 L 326 0">
+					</path>
+				</svg>
+				<svg class="n_18_hz" viewBox="0 0 326 1">
+					<path id="n_18_hz" d="M 0 0 L 326 0">
+					</path>
+				</svg>
+				<svg class="n_18_h" viewBox="0 0 326 1">
+					<path id="n_18_h" d="M 0 0 L 326 0">
+					</path>
+				</svg>
+				<svg class="n_18_ia" viewBox="0 0 326 1">
+					<path id="n_18_ia" d="M 0 0 L 326 0">
+					</path>
+				</svg>
+			</div>
+			<div id="ABOUT">
+				<span>ABOUT</span>
+			</div>
+			<div onclick="application.goToTargetView(event)" id="MYPAGE">
+				<span>MYPAGE</span>
+			</div>
+			<div onclick="application.goToTargetView(event)" id="SEARCH">
+				<span>SEARCH</span>
+			</div>
+			<div id="LOGOUT">
+				<span>LOGOUT</span>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
