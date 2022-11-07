@@ -1,7 +1,150 @@
 body {
-    background-color: rgb(240, 240, 250);
+  background-color:#E0E5EC;
     width: 100%;
   margin: 0 auto;
+}
+.box-parent{
+  height:700px;
+}
+
+.box-title1{
+  padding-top: 4px;
+  margin-left: 12px;
+  color: black;
+}
+
+.text-parent{
+  display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-regist1{
+  margin-right: 12px;
+  color: black;
+}
+
+.box-formation{
+  margin-left: 12px;
+  font-size: 30px;
+
+  color: rgb(102, 102, 102);
+}
+
+.box{
+  /* 基本的なスタイルと配置 */
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  border-radius:18px;
+  width:90%;
+  height:90%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* ニューモーフィズムのスタイル */
+  position: relative;
+}
+
+.box-select1{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 10%;
+  border-radius:18px;
+  width:20%;
+  height:15%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select2{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 70%;
+  margin-top: 0;
+  border-radius:18px;
+  width:20%;
+  height:15%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select3{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 40%;
+  margin-top:28px;
+  border-radius:18px;
+  width:20%;
+  height:15%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select4{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 10%;
+  margin-top: 119px;
+  border-radius:18px;
+  width:20%;
+  height:15%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select5{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 70%;
+  margin-top: 119px;
+  border-radius:18px;
+  width:20%;
+  height:15%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select6{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 40%;
+  margin-top:155px;
+  border-radius:18px;
+  width:20%;
+  height:15%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* ニューモーフィズムのスタイル */
 }
 
 :root {
