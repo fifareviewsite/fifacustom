@@ -5,7 +5,7 @@
     </div>
     <input type="checkbox" class="menu-btn" id="menu-btn">
     <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
-    <ul class="menu">
+    <ul class="menu" style="z-index:2147483647">
       <li class="menu_login">
         <div class="login_user">
             <div class="icon">

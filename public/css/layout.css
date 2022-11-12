@@ -3,6 +3,32 @@ body {
     width: 100%;
   margin: 0 auto;
 }
+
+.select-text{
+  text-align: center;
+  height: 13px;
+  font-size: 11px;
+  margin: 0;
+  padding-top: 9.3px;
+  color: #7e7c7c;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select-text-5{
+  text-align: center;
+  height: 13px;
+  font-size: 11px;
+  margin: 0;
+  padding-top: 5.3px;
+  color: #7e7c7c;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
 .box-parent{
   height:700px;
 }
@@ -31,8 +57,17 @@ body {
 .box-formation{
   margin-left: 12px;
   font-size: 30px;
-
   color: rgb(102, 102, 102);
+}
+
+.box-content1{
+  width: 100%;
+  height: 11%;
+}
+
+.box-content2{
+  width: 100%;
+  height: 54%;
 }
 
 .box{
@@ -43,7 +78,7 @@ body {
   margin-top:20px;
   border-radius:18px;
   width:90%;
-  height:90%;
+  height:97%;
     /* 基本的なスタイルと配置 */
   /* ニューモーフィズムのスタイル */
   background-color:#E0E5EC;
@@ -146,6 +181,247 @@ body {
   box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
     /* ニューモーフィズムのスタイル */
 }
+
+.box-select7{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 5%;
+  margin-top: 256px;
+  border-radius:18px;
+  width:20%;
+  height:15%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select8{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 75%;
+  margin-top: 256px;
+  border-radius:18px;
+  width:20%;
+  height:15%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* ニューモーフィズムのスタイル */
+}
+.box-cb1{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 31%;
+  margin-top: 300px;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #caced4, #f0f5fd);
+box-shadow:  8px 8px 11px #d5dae0,
+             -8px -8px 11px #ebf0f8;
+}
+.box-cb2{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 55%;
+  margin-top: 300px;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #caced4, #f0f5fd);
+box-shadow:  8px 8px 11px #d5dae0,
+             -8px -8px 11px #ebf0f8;
+}
+
+.cb{
+  position: absolute;
+  color: #717096;
+  left: 29%;
+}
+
+.defense{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  width:100%;
+  text-align: center;
+}
+
+.defense-title{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  margin-top: 0;
+  width:100%;
+  text-align: center;
+}
+
+.defense-tac{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  margin-top: 20px;
+  width:100%;
+  text-align: center;
+}
+
+.graph-defense-parent {
+  display: flex;
+}
+
+.graph-defense {
+  margin-top: 46px;
+  margin-left: 70px;
+  position: absolute;
+  width: 70%;
+  padding: 2px;
+}
+
+.graph-defense-title{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  margin-top: 44px;
+  margin-left: 30px;
+}
+
+.graph-defense .bar {
+  display: block;
+  position: absolute;
+  background: #ffa42c;
+  text-align: center;
+  font-size: 7px;
+  color: #f0ffff;
+  height: 2em;
+  line-height: 2em;
+}
+.graph-defense .bar span { position: absolute; left: 1em; }
+
+.graph-defense-parent2 {
+display: flex;
+}
+
+.graph2-defense {
+margin-left: 70px;
+position: absolute;
+width: 70%;
+padding: 2px;
+}
+
+.graph-defense-title2{
+margin: 0;
+padding: 0;
+font-size: 14px;
+margin-left: 30px;
+}
+
+.graph2-defense .bar {
+display: block;
+position: absolute;
+background: #3369ff;
+text-align: center;
+font-size: 7px;
+color: #f0ffff;
+height: 2em;
+line-height: 2em;
+}
+.graph2-defense .bar span { position: absolute; left: 1em; }
+
+.offense{
+  margin-top: 83px;
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  width:100%;
+  text-align: center;
+}
+
+.offense-title{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  margin-top: 0;
+  width:100%;
+  text-align: center;
+}
+
+.offense-tac1{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  margin-top: 20px;
+  width:100%;
+  text-align: center;
+}
+
+.offense-tac2{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  margin-top: 40px;
+  width:100%;
+  text-align: center;
+}
+
+.graph-offense-parent {
+  display: flex;
+}
+
+.graph-offense {
+  margin-top: 67px;
+  margin-left: 70px;
+  position: absolute;
+  width: 70%;
+  padding: 2px;
+}
+
+.graph-offense-title{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  margin-top: 66px;
+  margin-left: 30px;
+}
+
+.graph-offense .bar {
+  display: block;
+  position: absolute;
+  background: #ff2c61;
+  text-align: center;
+  font-size: 7px;
+  color: #f0ffff;
+  height: 2em;
+  line-height: 2em;
+}
+.graph-offense .bar span { position: absolute; left: 1em; }
+
+.graph-offense-parent2 {
+display: flex;
+}
+
+.graph2-offense {
+margin-left: 70px;
+position: absolute;
+width: 70%;
+padding: 2px;
+}
+
+.graph-offense-title2{
+margin: 0;
+padding: 0;
+font-size: 14px;
+margin-left: 30px;
+}
+
+.graph2-offense .bar {
+display: block;
+position: absolute;
+background: #792cdf;
+text-align: center;
+font-size: 7px;
+color: #f0ffff;
+height: 2em;
+line-height: 2em;
+}
+.graph2-offense .bar span { position: absolute; left: 1em; }
 
 :root {
     --background-navbar: rgba(55, 55, 55, 0.98);
