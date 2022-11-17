@@ -4,5 +4,6 @@
 <meta name="description" itemprop="description" content="@yield('description')">
 <meta name="keywords" itemprop="keywords" content="@yield('keywords')">
 <link href="/css/layout.css" rel="stylesheet">
+<link href="/css/mypage.css" rel="stylesheet">
 @yield('pageCss')
 @endsection

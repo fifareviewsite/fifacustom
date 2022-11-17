@@ -5,6 +5,7 @@
 @section('description', '説明文')
 @section('pageCss')
 <link href="/css/page.css" rel="stylesheet">
+<script src="{{ asset('/js/edit.js') }}"></script>
 @endsection
  
 @include('layout.head')

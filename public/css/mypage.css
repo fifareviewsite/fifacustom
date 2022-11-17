@@ -1,0 +1,257 @@
+
+.box-container-all{
+  /* 基本的なスタイルと配置 */
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:10px;
+  border-radius:18px;
+  width:90%;
+  height:97%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#E0E5EC;
+  box-shadow: 9px 9px 16px rgb(163,177,198,0.6), -9px -9px 16px    rgba(255,255,255, 0.5);
+    /* ニューモーフィズムのスタイル */
+  position: relative;
+}
+.box-container-top{
+  height:55%;
+  width: 100%;
+  border-radius:18px 18px 0px 0px;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background-color:#FFA5A5;
+    /* ニューモーフィズムのスタイル */
+}
+.box-container-top-formation{
+  margin: 0;
+  padding-top: 10px; 
+  text-align: center;
+  color: rgb(248, 213, 213);
+  font-family: "Arial Black";
+  font-size:60px;
+}
+
+.box-container-title{
+  margin: 0;
+  padding-left:10px;
+  font-family: "HiraKakuProN-W6";
+  color: rgb(58, 58, 58);
+}
+
+.box-container-date{
+  font-size: 11px;
+  margin: 0;
+  padding-left:10px;
+  font-family: "HiraKakuProN-W6";
+  color: rgba(165, 164, 164, 0.534);
+}
+
+.box-container-footer {
+  display:flex;
+}
+
+.box-container-copy {
+  position: absolute;
+  top: 80%;
+  left: 15px;
+  width: 78px;
+  height: 22px;
+  background: rgba(244, 247, 89, 0.644);
+  border-radius: 10px;
+  box-shadow: 8px 8px 15px #BFC7D9, -8px -8px 15px #E5EFFF;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.box-container-copy p{
+  color: #BFC7D9;
+  margin: 2px 0px 0px 0px;
+  font-size: 12px;
+}
+
+.box-container-create{
+  top: 89%;
+  left: 200px;
+  font-size:12px;
+  position: absolute;
+}
+
+.box-container-goodcount{
+  top: 70%;
+  left: 69%;
+  position: absolute;
+  width: 78px;
+  height: 32px;
+  border-radius: 39px;
+  background: #E0E5EC;
+  box-shadow: inset 17px 17px 33px #c3c7cd,
+              inset -17px -17px 33px #fdffff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 39px;
+  display:flex;
+}
+
+.box-container-goodcount p{
+  margin:0;
+  padding-top: 4px;
+  padding-left: 6px;
+}
+
+label {
+  color:#FA9797;
+  padding-top: 5px;
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+label svg {
+  width: 16px;
+}
+
+
+.box-container-copy:active {
+  box-shadow: inset 8px 8px 15px #BFC7D9, inset -8px -8px 15px #E5EFFF;
+}
+
+@media(min-width:751px){
+  .box-container{
+    height:200px;
+    width: 390px;
+  }
+  .container{
+    display:flex;
+    flex-wrap:wrap;
+  }
+}
+@media(max-width:750px){
+  .box-container{
+    height:200px;
+    width: 100%;
+  }
+}
+
+.mypage_header {
+  display: flex;
+}
+
+.user_icon {
+  width:40px;
+  height:40px;
+  border-radius: 39px;
+background: #E0E5EC;
+box-shadow:  -5px -5px 5px #a1a5aa,
+             5px 5px 5px #ffffff;
+}
+
+.save_icon {
+  width:40px;
+  height:40px;
+  margin-left:10px;
+  margin-right:10px;
+  border-radius: 39px;
+background: #E0E5EC;
+box-shadow:  -5px -5px 5px #a1a5aa,
+             5px 5px 5px #ffffff;
+}
+
+.select_mypage {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:6px;
+  border-radius:18px;
+  width:90%;
+  height:97%;
+}
+
+.cp_ipselect_mypage {
+  overflow: hidden;
+  width: 160px;
+  margin: 0;
+  text-align: center;
+}
+.cp_ipselect_mypage select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.cp_ipselect_mypage select::-ms-expand {
+    display: none;
+}
+.cp_ipselect_mypage.cp_sl04 {
+  top: 4px;
+  position: relative;
+  border-radius: 2px;
+  border: 2px solid #2e2a2a;
+  border-radius: 50px;
+  background: rgb(232, 236, 241);
+}
+.cp_ipselect_mypage.cp_sl04::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.8em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #da3c41;
+  pointer-events: none;
+}
+.cp_ipselect_mypage.cp_sl04 select {
+  padding: 8px 38px 8px 8px;
+  color: #585858;
+}
+
+.fixed_btn { 
+  position: fixed;
+  border-radius: 20px;
+  bottom: 10px;
+  right: 10px;
+  padding: 6px 40px;
+  background: rgb(232, 236, 241);
+  }
+
+  a.btn--orange {
+    color: #fff;
+    background-color: #eb6100;
+  }
+  
+  a.btn--orange:hover {
+    color: #fff;
+    background: #f56500;
+  }
+  
+  a.btn--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  a.btn--circle {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 6px 40px;
+    border-radius: 50%;
+    line-height: 86px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    font-size: 70px;
+  }
