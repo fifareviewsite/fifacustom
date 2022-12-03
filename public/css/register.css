@@ -1,0 +1,543 @@
+
+.form_formation{
+  max-width: 450px;
+  padding: 0.5em 1em 0px 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: #5d627b;
+    background: rgb(250, 245, 245);
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    border-radius:18px;
+    width:90%;
+    height:97%;
+    top:10px;
+  position: relative;
+}
+
+.form_formation_parent{
+  height:100%;
+}
+.form_formation_box{
+  top:10px;
+  height:800px;
+}
+.form_formation_title{
+  text-align: center;
+}
+
+.form_defense{
+  max-width: 450px;
+  padding: 0.5em 1em 0px 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: #5d627b;
+    background: rgb(250, 245, 245);
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    border-radius:18px;
+    width:90%;
+    height:97%;
+    top:10px;
+  position: relative;
+}
+
+.form_defense_parent{
+  height:100%;
+}
+.form_defense_box{
+  top:10px;
+  height:240px;
+}
+.form_defense_title{
+  text-align: center;
+}
+
+.form_offense{
+  max-width: 450px;
+  padding: 0.5em 1em 0px 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: #5d627b;
+    background: rgb(250, 245, 245);
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    border-radius:18px;
+    width:90%;
+    height:97%;
+    top:10px;
+  position: relative;
+}
+.form_save{
+  max-width: 450px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width:90%;
+    height:97%;
+  position: relative;
+}
+.form_save_parent{
+  width:100px;
+}
+.form_offense_box{
+  top:10px;
+  height:350px;
+}
+.form_offense_title{
+  text-align: center;
+}
+
+.form_setting{
+  max-width: 450px;
+  padding: 0.5em 1em 0px 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    color: #5d627b;
+    background: rgb(250, 245, 245);
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    border-radius:18px;
+    width:90%;
+    height:97%;
+    top:10px;
+  position: relative;
+}
+
+.form_setting_parent{
+  height:100%;
+}
+.form_setting_box{
+  top:10px;
+  height:200px;
+}
+.form_setting_title{
+  text-align: center;
+}
+.form_setting_open{
+  position: absolute;
+  top:40px;
+  left:20px;
+  font-size:20px;
+}
+
+.form_setting_text1{
+  position: absolute;
+  top:72px;
+  left:25px;
+  font-size:13px;
+  color: #a1a1a1e1;
+}
+.form_setting_copy{
+  position: absolute;
+  top:120px;
+  left:20px;
+  font-size:20px;
+}
+
+.form_setting_text2{
+  position: absolute;
+  top:150px;
+  left:25px;
+  font-size:13px;
+  color: #a1a1a1e1;
+}
+.form_setting_content{
+  display: flex;
+}
+
+.cp_ipselect_register {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.cp_ipselect_register select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  font-size: 20px;
+  text-align: center;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.cp_ipselect_register select::-ms-expand {
+    display: none;
+}
+.cp_ipselect_register.cp_sl04 {
+  top: 4px;
+  position: relative;
+  border-radius: 2px;
+  border: 2px solid #2e2a2a;
+  border-radius: 14px;
+  background: rgb(232, 236, 241);
+}
+.cp_ipselect_register.cp_sl04::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.8em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #da3c41;
+  pointer-events: none;
+}
+.cp_ipselect_register.cp_sl04 select {
+  padding: 8px 38px 8px 8px;
+  color: #585858;
+}
+
+.range-container {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  overflow: hidden;
+  margin: 0px 0px 0px 0px;
+}
+
+.range-container2 {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  overflow: hidden;
+  margin: 0px 0px 0px 0px;
+}
+
+input[type="range"] {
+  width: 600px;
+  margin: 18px 18px 18px 18px;
+  /* WebKit ベースのブラウザー (Safari など) と
+   Blink ベースのブラウザー (Chrome, Opera など) で
+   同じことを実現するために使用される。
+   なお、 Firefox や Edge もまた、互換性の理由から
+   -webkit-appearance に対応している。 */
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  /* 青線を消す */
+  outline: none;
+}
+
+textarea {
+  width:100%;
+  height:300px;
+  resize:none;
+  border-radius: 10px;
+  margin-left:5px;
+  font-size:15px;
+  padding-top: 5px;
+  padding-right: 0px;
+  padding-left: 5px;
+  padding-bottom: 0px;
+}
+
+.toggle {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  top: 17%;
+  left:75%;
+  margin: 0;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.toggle input[type=checkbox] {
+  display: none;
+}
+.toggle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #e9e9eb;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.toggle:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 25px;
+  height: 25px;
+  display: block;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0 9px 28px -6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.toggle.checked:before {
+  background: #35c759;
+}
+.toggle.checked:after {
+  left: 33px;
+  box-shadow: 0 9px 28px -6px rgba(0, 0, 0, 0.5);
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 6px 0px 6px 0px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+.btn-wrap-pc-sp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  max-width: 435px;
+  margin: 0 auto 20px;
+
+  -webkit-box-pack: justify;
+
+  -ms-flex-pack: justify;
+
+  justify-content: space-between;
+}
+
+a.btn-pc-sp {
+  line-height: 1.4;
+
+  width: 35.5%;
+
+  border-radius: 100vh;
+
+  color: #ffff;
+}
+
+a.btn-pc-sp--contact {
+  color: #fff;
+  background: #d20010;
+}
+
+a.btn-pc-sp--tel {
+  color: #fff;
+  background: #094;
+}
+
+.fa-position-right {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  right: 1rem;
+}
+
+.box-select-content{
+  width: 100%;
+  height: 54%;
+}
+
+.box-select-1-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  margin:15px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  left: 5%;
+  width:28%;
+  height:16%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select-2-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  margin:15px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  left: 67%;
+  width:28%;
+  height:16%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select-3-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 36%;
+  margin-top:100px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select-4-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 5%;
+  margin-top: 210px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-5-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 67%;
+  margin-top: 210px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-6-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 36%;
+  margin-top:340px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-7-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 2%;
+  margin-top: 490px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-8-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 70%;
+  margin-top: 490px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-cb1-0{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 31%;
+  margin-top: 593px;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #caced4, #f0f5fd);
+box-shadow:  8px 8px 11px #d5dae0,
+             -8px -8px 11px #ebf0f8;
+}
+.box-cb2-0{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 55%;
+  margin-top: 593px;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #caced4, #f0f5fd);
+box-shadow:  8px 8px 11px #d5dae0,
+             -8px -8px 11px #ebf0f8;
+}
+
+.select-incontent-4selecter{
+  margin: 0px 0px 0px 0px;
+  max-width: 125px;
+}
+
+.select-incontent-5selecter{
+  margin: 0px 0px 0px 0px;
+  max-width: 125px;
+}
+
+.selectbox-4selecter{
+  background-color: #edf5ff;
+  margin: 0px 0px 2px 0px;
+  padding: 0px 0px 5px 0px;
+  width: 100%;
+  height: 27px;
+}
+
+.selectbox-5selecter{
+  background-color: #edf5ff;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  height: 23px;
+}

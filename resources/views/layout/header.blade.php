@@ -23,7 +23,7 @@
     　  </div>
       </li>
       <li class="menu_about"><a href="#home">ABOUT</a></li>
-      <li class="menu_mypage"><a href="#skills">MYPAGE</a></li>
+      <li class="menu_mypage"><a href="/mypage">MYPAGE</a></li>
       <li class="menu_search"><a href="#projects">SEARCH</a></li>
       <li class="menu_logout"><a href="#contact">LOGOUT</a></li>
     </ul>
