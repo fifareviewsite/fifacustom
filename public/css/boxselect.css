@@ -1,0 +1,307 @@
+.box-select-1-0{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  margin:48px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  left: 5%;
+  width:28%;
+  height:126px;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select-2-0{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  margin:48px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  left: 67%;
+  width:28%;
+  height:126px;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select-3-0{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 36%;
+  margin-top:20px;
+  width:28%;
+  height:126px;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select-4-0{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 2%;
+  margin-top: 250px;
+  width:22%;
+  height:126px;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-5-0{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 52%;
+  margin-top: 250px;
+  width:22%;
+  height:126px;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-6-0{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 26%;
+  margin-top:250px;
+  width:22%;
+  height:126px;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-7-0{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 76%;
+  margin-top: 250px;
+  width:22%;
+  height:126px;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-8-0{
+  display: none;
+}
+.box-select-1-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  margin:15px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  left: 5%;
+  width:28%;
+  height:16%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select-2-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  margin:15px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  left: 67%;
+  width:28%;
+  height:16%;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select-3-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 36%;
+  margin-top:100px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    /* ニューモーフィズムのスタイル */
+}
+
+.box-select-4-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 5%;
+  margin-top: 210px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-5-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 67%;
+  margin-top: 210px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-6-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 36%;
+  margin-top:340px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-7-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 2%;
+  margin-top: 490px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-select-8-21{
+  /* 基本的なスタイルと配置 */
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 70%;
+  margin-top: 490px;
+  width:28%;
+  height:16%;
+  color: #5d627b;
+  background: rgb(246 241 255);
+  border-top: solid 5px #5d627b;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box-cb1-1{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 33%;
+  margin-top: 593px;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #caced4, #f0f5fd);
+box-shadow:  8px 8px 11px #d5dae0,
+             -8px -8px 11px #ebf0f8;
+}
+
+.box-cb1-0{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 17%;
+  margin-top: 510px;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #caced4, #f0f5fd);
+box-shadow:  8px 8px 11px #d5dae0,
+             -8px -8px 11px #ebf0f8;
+}
+.box-cb2-0{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 44%;
+  margin-top: 510px;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #caced4, #f0f5fd);
+box-shadow:  8px 8px 11px #d5dae0,
+             -8px -8px 11px #ebf0f8;
+}
+
+.box-cb3-0{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 70%;
+  margin-top: 510px;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #caced4, #f0f5fd);
+box-shadow:  8px 8px 11px #d5dae0,
+             -8px -8px 11px #ebf0f8;
+}
+
+.box-cb2-1{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 52%;
+  margin-top: 593px;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #caced4, #f0f5fd);
+box-shadow:  8px 8px 11px #d5dae0,
+             -8px -8px 11px #ebf0f8;
+}
+
+.box-cb2-1{
+  position: absolute;
+  padding: 0px 0px 0px 0px;
+  left: 52%;
+  margin-top: 593px;
+  width:55px;
+  height:55px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #caced4, #f0f5fd);
+box-shadow:  8px 8px 11px #d5dae0,
+             -8px -8px 11px #ebf0f8;
+}
+
+.box-cb3-1{
+  display: none;
+}

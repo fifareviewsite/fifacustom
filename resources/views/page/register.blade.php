@@ -6,6 +6,7 @@
 @section('pageCss')
 <link href="/css/page.css" rel="stylesheet">
 <link href="/css/register.css" rel="stylesheet">
+<link href="/css/boxselect.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="{{ asset('/js/edit.js') }}">
 </script>
@@ -22,7 +23,7 @@
             <div class="form_formation_title">FORMATION</div>
             <div class="cp_ipselect_register cp_sl04">
                 <select name="formation" required>
-                    <option value="0"">3-4-3</option>
+                    <option value="0" selected>3-4-3</option>
                     <option value="1">3-5-2</option>
                     <option value="2">3-4-1-2</option>
                     <option value="3">3-4-2-1</option>
@@ -42,7 +43,7 @@
                     <option value="18">4-3-2-1</option>
                     <option value="19">4-4-1-1</option>
                     <option value="20">4-1-2-1-2</option>
-                    <option value="21" checked>4-1-2-1-2(2)</option>
+                    <option value="21">4-1-2-1-2(2)</option>
                     <option value="22">5-2-1-2</option>
                     <option value="23">5-2-2-1</option>
                     <option value="24">5-1-2-2</option>
@@ -53,27 +54,34 @@
                 </select>
             </div>
             <div class="box-select-content">
-            <div id="position_1" class="box-select-1-21">
-                <div class="select-incontent-4selecter">
-                    <select class="selectbox-4selecter" name="A-1-21">
+            @for ($i = 1; $i < 9; $i++)
+            <div id="position_{{$i}}" class="box-select-{{$i}}-0">
+                <div id="selecter_{{$i}}" class="select-incontent-5selecter">
+                    <select id="select_{{$i}}_1" class="selectbox-5selecter" name="A-1-0">
                         <option value="1">ワイドに開く</option>
                         <option value="2">前線に張る</option>
                         <option value="3">前線に張る</option>
                         <option value="4">前線に張る</option>
                     </select>
-                    <select class="selectbox-4selecter" name="B-1-21">
+                    <select id="select_{{$i}}_2" class="selectbox-5selecter" name="B-1-0">
                         <option value="1">裏に抜ける</option>
                         <option value="2">前線に張る</option>
                         <option value="3">前線に張る</option>
                         <option value="4">前線に張る</option>
                     </select>
-                    <select class="selectbox-4selecter" name="C-1-21">
+                    <select id="select_{{$i}}_3" class="selectbox-5selecter" name="C-1-0">
                         <option value="1">初期設定</option>
                         <option value="2">前線に張る</option>
                         <option value="3">前線に張る</option>
                         <option value="4">前線に張る</option>
                     </select>
-                    <select class="selectbox-4selecter" name="D-1-21">
+                    <select id="select_{{$i}}_4" class="selectbox-5selecter" name="D-1-0">
+                        <option value="1">前線に張る</option>
+                        <option value="2">前線に張る</option>
+                        <option value="3">前線に張る</option>
+                        <option value="4">前線に張る</option>
+                    </select>
+                    <select id="select_{{$i}}_5" class="selectbox-5selecter" name="E-1-0">
                         <option value="1">前線に張る</option>
                         <option value="2">前線に張る</option>
                         <option value="3">前線に張る</option>
@@ -81,9 +89,10 @@
                     </select>
                 </div>
             </div>
-            
-            <div id="position_2" class="box-select-2-21">
-                <div class="select-incontent-4selecter">
+            @endfor
+            <!--
+            <div id="position_2" class="box-select-2-0">
+                <div id="selecter_2" class="select-incontent-4selecter">
                     <select class="selectbox-4selecter" name="A-2-21">
                         <option value="1">ワイドに開く</option>
                         <option value="2">前線に張る</option>
@@ -110,8 +119,8 @@
                     </select>
                 </div>
             </div>
-            <div id="position_3" class="box-select-3-21">
-                <div class="select-incontent-4selecter">
+            <div id="position_3" class="box-select-3-0">
+                <div id="selecter_3" class="select-incontent-4selecter">
                     <select class="selectbox-4selecter" name="A-3-21">
                         <option value="1">ワイドに開く</option>
                         <option value="2">前線に張る</option>
@@ -138,8 +147,8 @@
                     </select>
                 </div>
             </div>
-            <div id="position_4" class="box-select-4-21">
-                <div class="select-incontent-5selecter">
+            <div id="position_4" class="box-select-4-0">
+                <div id="selecter_4" class="select-incontent-5selecter">
                     <select class="selectbox-5selecter" name="A-4-21">
                         <option value="1">ワイドに開く</option>
                         <option value="2">前線に張る</option>
@@ -172,8 +181,8 @@
                     </select>
                 </div>
             </div>
-            <div id="position_5" class="box-select-5-21">
-                <div class="select-incontent-5selecter">
+            <div id="position_5" class="box-select-5-0">
+                <div id="selecter_5" class="select-incontent-5selecter">
                     <select class="selectbox-5selecter" name="A-4-21">
                         <option value="1">ワイドに開く</option>
                         <option value="2">前線に張る</option>
@@ -206,8 +215,8 @@
                     </select>
                 </div>
             </div>
-            <div id="position_6" class="box-select-6-21">
-                <div class="select-incontent-5selecter">
+            <div id="position_6" class="box-select-6-0">
+                <div id="selecter_6" class="select-incontent-5selecter">
                     <select class="selectbox-5selecter" name="A-4-21">
                         <option value="1">ワイドに開く</option>
                         <option value="2">前線に張る</option>
@@ -240,8 +249,8 @@
                     </select>
                 </div>
             </div>
-            <div id="position_7" class="box-select-7-21">
-                <div class="select-incontent-5selecter">
+            <div id="position_7" class="box-select-7-0">
+                <div id="selecter_7" class="select-incontent-5selecter">
                     <select class="selectbox-5selecter" name="A-4-21">
                         <option value="1">ワイドに開く</option>
                         <option value="2">前線に張る</option>
@@ -274,8 +283,8 @@
                     </select>
                 </div>  
             </div>
-            <div id="position_8" class="box-select-8-21">
-                <div class="select-incontent-5selecter">
+            <div id="position_8" class="box-select-8-0">
+                <div id="selecter_8" class="select-incontent-5selecter">
                     <select class="selectbox-5selecter" name="A-4-21">
                         <option value="1">ワイドに開く</option>
                         <option value="2">前線に張る</option>
@@ -308,10 +317,14 @@
                     </select>
                 </div>
             </div>
-            <div class="box-cb1-0">
+-->
+            <div id="cb_1" class="box-cb1-0">
                 <p class="cb">CB</p>
             </div>
-            <div class="box-cb2-0">
+            <div id="cb_2" class="box-cb2-0">
+                <p class="cb">CB</p>
+            </div>
+            <div id="cb_3" class="box-cb3-0">
                 <p class="cb">CB</p>
             </div>
         </div>
