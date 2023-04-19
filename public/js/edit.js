@@ -68,7 +68,7 @@ const select5wing5Options = [
     { value: 2, name: '積極的なインターセプト'},
     { value: 3, name: '受動的なインターセプト'},
 ]
-
+/*
   var select = $('[name="formation"]');
   //select.on('change', function(){
     var formation_val = $('[name=formation]').val(); // 選択されたフォーメーション番号
@@ -223,6 +223,22 @@ const select5wing5Options = [
                 document.querySelector(cbId).classList.replace(cbClass[0],replaceClass);
             }
         }
-      }
+      }*/
     //});
+    var modal = document.querySelector("#modal");
+    var modalOverlay = document.querySelector("#modal-overlay");
+    var closeButton = document.querySelector("#close-button");
+    var openButton = document.querySelector("#open-button");
+
+    //閉じるボタン
+    closeButton.addEventListener("click", function () {
+        modal.classList.toggle("closed");
+        modalOverlay.classList.toggle("closed");
+    });
+
+    //開くボタン
+    openButton.addEventListener("click", function () {
+        modal.classList.toggle("closed");
+        modalOverlay.classList.toggle("closed");
+    });
 });

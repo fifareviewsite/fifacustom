@@ -54,6 +54,16 @@
                 </select>
             </div>
             <div class="box-select-content">
+            <div class="modal-overlay closed" id="modal-overlay"></div>
+                <div class="modal closed" id="modal">
+                <button class="close-button" id="close-button">close</button>
+                <div class="modal-guts">
+                    <h4>ST Direction</h4>
+                    <input type="select">
+                </div>
+                </div>
+                <button id="open-button" class="open-button">ST</button>
+            <!--
             @for ($i = 1; $i < 9; $i++)
             <div id="position_{{$i}}" class="box-select-{{$i}}-0">
                 <div id="selecter_{{$i}}" class="select-incontent-5selecter">
@@ -90,6 +100,7 @@
                 </div>
             </div>
             @endfor
+            -->
             <!--
             <div id="position_2" class="box-select-2-0">
                 <div id="selecter_2" class="select-incontent-4selecter">
