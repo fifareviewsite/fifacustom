@@ -1,7 +1,7 @@
 
 .form_formation{
   max-width: 450px;
-  padding: 0.5em 1em 0px 0px;
+  padding: 0.5em 0px 0px 0px;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -22,7 +22,7 @@
 }
 .form_formation_box{
   top:10px;
-  height:800px;
+  height:560px;
 }
 .form_formation_title{
   text-align: center;
@@ -166,8 +166,8 @@
   width: 100%;
   padding-right: 1em;
   cursor: pointer;
-  text-indent: 0.01px;
-  font-size: 20px;
+  text-indent: 33px;
+  font-size: 30px;
   text-align: center;
   text-overflow: ellipsis;
   border: none;
@@ -452,4 +452,161 @@ a.btn-pc-sp--tel {
   padding: 10px 20px;
   border-radius: 10px;
   font-size: 21px;
+  }
+
+  .institution_form_1 {
+    position: absolute;
+    font-size:12px;
+    top:500px;
+    text-align: center;
+  }
+  .institution_form_2 {
+    position: absolute;
+    font-size:12px;
+    top:520px;
+    text-align: center;
+  }
+
+  .button-1-1 {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 0;
+    background: rgb(116, 105, 179);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 21px;
+  }
+
+  .button-1-2 {
+    position: absolute;
+    left:20%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 0;
+    background: rgb(116, 105, 179);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 21px;
+  }
+
+  .button-1-3 {
+    position: absolute;
+    left:80%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 0;
+    background: rgb(116, 105, 179);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 21px;
+  }
+
+  .button-1-4 {
+    position: absolute;
+    left:13%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 0;
+    background: rgb(70, 144, 255);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 170px;
+    border-radius: 10px;
+    font-size: 21px;
+  }
+
+  .button-1-5 {
+    position: absolute;
+    left:38%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 0;
+    background: rgb(70, 144, 255);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 170px;
+    border-radius: 10px;
+    font-size: 21px;
+  }
+
+  .button-1-6 {
+    position: absolute;
+    left:62%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 0;
+    background: rgb(70, 144, 255);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 170px;
+    border-radius: 10px;
+    font-size: 21px;
+  }
+
+  .button-1-7 {
+    position: absolute;
+    left:87%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 0;
+    background: rgb(70, 144, 255);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 170px;
+    border-radius: 10px;
+    font-size: 21px;
+  }
+  .button-1-8 {
+    position: absolute;
+    left:25%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 0;
+    background: rgb(96, 102, 110);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 300px;
+    font-size: 21px;
+  }
+  .button-1-9 {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 0;
+    background: rgb(96, 102, 110);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 300px;
+    font-size: 21px;
+  }
+  .button-1-10 {
+    position: absolute;
+    left:75%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    border: 0;
+    background: rgb(96, 102, 110);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 300px;
+    font-size: 21px;
   }
