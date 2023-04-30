@@ -28,9 +28,14 @@ Route::get('/formation', function () {
 // この行を追加
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/vue', function () {
-    return view('vuesample');
-});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/*
+Route::get('app', function () {
+    return view('app');
+});
+*/
+Route::get('app', function () {
+    return view('index');
+});

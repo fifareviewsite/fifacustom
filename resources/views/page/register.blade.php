@@ -73,7 +73,6 @@
 <button class="button-1-8" name="button_form">CB</button>
 <button class="button-1-9" name="button_form">CB</button>
 <button class="button-1-10" name="button_form">CB</button>
-
                 </div>
                 <!--<button id="open-button-1" class="open-button">ST</button>-->
                 <p class="institution_form_1">※各ポジションをタップすると入力フォームが表示されます</p>
