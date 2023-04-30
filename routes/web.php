@@ -21,7 +21,7 @@ Route::get('/mypage', function () {
     return view('/page/mypage'); // この行を編集
 });
 
-Route::get('/register', function () {
+Route::get('/formation', function () {
     return view('/page/register'); // この行を編集
 });
 
