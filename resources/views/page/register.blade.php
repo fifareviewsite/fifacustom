@@ -63,16 +63,16 @@
                     <input type="select">
                 </div>
 -->
-<button class="button-1-1">ST</button>
-<button class="button-1-2">LW</button>
-<button class="button-1-3">RW</button>
-<button class="button-1-4">LM</button>
-<button class="button-1-5">CM</button>
-<button class="button-1-6">CM</button>
-<button class="button-1-7">RM</button>
-<button class="button-1-8">CB</button>
-<button class="button-1-9">CB</button>
-<button class="button-1-10">CB</button>
+<button id="button-1-1" class="button-1-1" name="button_form">ST</button>
+<button class="button-1-2" name="button_form">LW</button>
+<button class="button-1-3" name="button_form">RW</button>
+<button class="button-1-4" name="button_form">LM</button>
+<button class="button-1-5" name="button_form">CM</button>
+<button class="button-1-6" name="button_form">CM</button>
+<button class="button-1-7" name="button_form">RM</button>
+<button class="button-1-8" name="button_form">CB</button>
+<button class="button-1-9" name="button_form">CB</button>
+<button class="button-1-10" name="button_form">CB</button>
 
                 </div>
                 <!--<button id="open-button-1" class="open-button">ST</button>-->
