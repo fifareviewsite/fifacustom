@@ -21,9 +21,16 @@ Route::get('/mypage', function () {
     return view('/page/mypage'); // この行を編集
 });
 
-Route::get('/register', function () {
+Route::get('/formation', function () {
     return view('/page/register'); // この行を編集
 });
 
 // この行を追加
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/vue', function () {
+    return view('vuesample');
+});
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

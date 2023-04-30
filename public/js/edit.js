@@ -7,6 +7,16 @@ $(function(){
       $(".toggle input").prop("checked", false);
     }
   });
+
+  $(".open-button").on("click", function() {
+    var openButton = document.querySelector(".open-button");
+    console.log(openButton);
+    //開くボタン
+    openButton.addEventListener("click", function () {
+        modal.classList.toggle("closed");
+        modalOverlay.classList.toggle("closed");
+    });
+  });
 const select5foward1Options = [
     { value: 0, name: 'サポートラン'},
     { value: 1, name: 'バランスワイド'},
@@ -225,19 +235,13 @@ const select5wing5Options = [
         }
       }*/
     //});
+
     var modal = document.querySelector("#modal");
     var modalOverlay = document.querySelector("#modal-overlay");
     var closeButton = document.querySelector("#close-button");
-    var openButton = document.querySelector("#open-button");
 
     //閉じるボタン
     closeButton.addEventListener("click", function () {
-        modal.classList.toggle("closed");
-        modalOverlay.classList.toggle("closed");
-    });
-
-    //開くボタン
-    openButton.addEventListener("click", function () {
         modal.classList.toggle("closed");
         modalOverlay.classList.toggle("closed");
     });
