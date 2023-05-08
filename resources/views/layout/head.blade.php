@@ -6,5 +6,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link href="/css/layout.css" rel="stylesheet">
 <link href="/css/mypage.css" rel="stylesheet">
-@yield('pageCss')
+<meta name="csrf-token" content="{{ csrf_token() }}">
+@viteReactRefresh
+@vite([
+'resources/css/app.css',
+'resources/scss/app.scss',
+'resources/ts/components/select_top.tsx',
+])
 @endsection

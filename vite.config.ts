@@ -33,7 +33,8 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/scss/app.scss',
-                'resources/ts/index.tsx'
+                //'resources/ts/index.tsx',
+                'resources/ts/selet_top.tsx',
             ],
             refresh: true,
         }),
