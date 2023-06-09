@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('/page/index'); // この行を編集
+    return view('app'); // この行を編集
 });
 
 Route::get('/mypage', function () {
