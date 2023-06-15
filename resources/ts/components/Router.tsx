@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
 import Home from "./Home";
-import Square from "./Home";
 import PageA from "./PageA";
 import { Button_c } from "./Button";
 
@@ -16,7 +15,7 @@ function App() {
         <div>
         <BrowserRouter>
             <Routes>
-                <Route exact path="/" element={<Square/>}/>
+                <Route exact path="/" element={<Home/>}/>
                 <Route path="/page_a" element={<PageA/>}/>
             </Routes>
         </BrowserRouter>

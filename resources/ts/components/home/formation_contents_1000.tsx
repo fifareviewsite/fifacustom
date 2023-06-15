@@ -9,16 +9,39 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { ConstructionRounded } from '@mui/icons-material';
 
 // index.blade.phpのid="select_top"を読み込む
 
-export default function formation_contents(props){
+export default function formation_contents_1000() {
+    const numbers = [
+        {
+            id:1,
+            cbFlg:1
+        },
+        {
+            id:2
+        },
+        {
+            id:3
+        },
+        {
+            id:4
+        },
+    ]
 
     return (
+        <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+        spaceBetween={50}
+        slidesPerView={2}
+        pagination={{ clickable: true }}
+        autoplay={false}
+        >
         <div className="box-row" >
+            {numbers.map((number) =>(
                 <SwiperSlide>
-                    <div className="box-parent">
+                    <div className="box-parent" key={number.id}>
                         <div className="box">
                             <div className="box-content1">
                                 <div className="box-title1">CF20連勝達成フォーメーション</div>
@@ -28,50 +51,50 @@ export default function formation_contents(props){
                                 </div>
                             </div>
                             <div className="box-content2">
-                                <div className={"box-select1-" + props.formation}>
+                                <div className="box-select1">
                                     <p className="select-text">ワイドに開く</p>
                                     <p className="select-text">裏に抜ける</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">前線を張る</p>
                                 </div>
-                                <div className={"box-select2-" + props.formation}>
+                                <div className="box-select2">
                                     <p className="select-text-5">ワイドに開く</p>
                                     <p className="select-text-5">裏に抜ける</p>
                                     <p className="select-text-5">前線にとどまる</p>
                                     <p className="select-text-5">攻撃時に上がらない</p>
                                     <p className="select-text-5">オーバーラップ</p>
                                 </div>
-                                <div className={"box-select3-" + props.formation}>
+                                <div className="box-select3">
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                 </div>
-                                <div className={"box-select4-" + props.formation}>
+                                <div className="box-select4">
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                 </div>
-                                <div className={"box-select5-" + props.formation}>
+                                <div className="box-select5">
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                 </div>
-                                <div className={"box-select6-" + props.formation}>
+                                <div className="box-select6">
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                 </div>
-                                <div className={"box-select7-" + props.formation}>
+                                <div className="box-select7">
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                 </div>
-                                <div className={"box-select8-" + props.formation}>
+                                <div className={`${number.cbFlg ? 'box-cb3' : 'box-select8'}`}>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
@@ -118,6 +141,8 @@ export default function formation_contents(props){
                         </div>
                     </div>
                     </SwiperSlide>
+            ))}
         </div>
+      </Swiper>
     );
   }
