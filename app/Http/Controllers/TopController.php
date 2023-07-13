@@ -14,10 +14,23 @@ class TopController extends Controller
      */
     public function index()
     {
+        
         $formation = Formation::all();
+        $formation_data = [
+            "post" => [
+                [
+                    "id" => 1,
+                    "formation" => 4312
+                ],
+                [
+                    "id" => 2,
+                    "formation" => 343
+                ]
+            ]
+        ];
         return response()->json(
-            $formation,200
-        )
+            $formation_data,200
+        );
     }
 
     /**

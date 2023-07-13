@@ -2,6 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import '../../../scss/app.scss';
 import '../../../scss/formation_contents.scss';
+import '../../../scss/formation_no.scss';
 import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -71,17 +72,24 @@ export default function formation_contents(props){
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                 </div>
+
                                 <div className={"box-select8-" + props.formation}>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                     <p className="select-text">初期設定</p>
                                 </div>
-                                <div className="box-cb1">
-                                    <p className="cb">CB</p>
+                                <div className={"box-select9-" + props.formation}>
+                                    <p className="select-text">初期設定</p>
+                                    <p className="select-text">初期設定</p>
+                                    <p className="select-text">初期設定</p>
+                                    <p className="select-text">初期設定</p>
                                 </div>
-                                <div className="box-cb2">
-                                    <p className="cb">CB</p>
+                                <div className={"box-select10-" + props.formation}>
+                                    <p className="select-text">初期設定</p>
+                                    <p className="select-text">初期設定</p>
+                                    <p className="select-text">初期設定</p>
+                                    <p className="select-text">初期設定</p>
                                 </div>
                             </div>
                             <div className="parameter">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -8,22 +8,41 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import axios from "axios";
 
 import Formatin_contents from "./home/formation_contents";
 import Formatin_contents_1000 from "./home/formation_contents_1000";
 import Formatin_contents_1600 from "./home/formation_contents_1600";
 import Burger from "./header";
 export default function Home() {
+  const [value,setValue] = useState([]);
+
+  const url = "http://localhost:80/api/";
+
+  useEffect(()=>{
+    (async ()=>{
+      try{
+        const res = await axios.get(url);
+        //console.log(res.data);
+        setValue(res.data.post);
+        return;
+      }catch (e){
+        return e;
+      }
+    })();
+  },[]);
+
+  console.log(value);
+/*
   const numbers = [
     {
         id:1,
         formation:4312,
-        cbFlg:true
     },
     {
         id:2,
-        formation:4312,
-        cbFlg:false
+        formation:343,
+        cbFlg:true
     },
     {
         id:3,
@@ -35,7 +54,7 @@ export default function Home() {
         formation:4312,
         cbFlg:false
     },
-]
+]*/
   return (
     <div>
       <div><Burger /></div>
@@ -49,9 +68,9 @@ export default function Home() {
           pagination={{ clickable: true }}
           autoplay={false}
           >
-          {numbers.map((number) =>(
-            <SwiperSlide>
-              <Formatin_contents key={number.id}{...number}/>
+          {value.map((formation) =>(
+            <SwiperSlide key={formation.id}>
+              <Formatin_contents key={formation.id}{...formation}/>
             </SwiperSlide>
           ))}
         </Swiper>

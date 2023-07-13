@@ -11,5 +11,5 @@ class Formation extends Model
     protected $fillable = [
         'title',
         'formation',
-    ]
+    ];
 }
