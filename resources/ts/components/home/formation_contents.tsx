@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import '../../../scss/app.scss';
 import '../../../scss/formation_contents.scss';
 import '../../../scss/formation_no.scss';
-import { Navigation, Autoplay, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
@@ -11,86 +10,47 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { ConstructionRounded } from '@mui/icons-material';
+//import Position from "../home/position";
 
 // index.blade.phpのid="select_top"を読み込む
 
 export default function formation_contents(props){
-
+    
+    const position = props.contents;
+    console.log(position);
     return (
         <div className="box-row" >
                 <SwiperSlide>
                     <div className="box-parent">
                         <div className="box">
                             <div className="box-content1">
-                                <div className="box-title1">CF20連勝達成フォーメーション</div>
+                                <div className="box-title1">{props.title}</div>
                                 <div className="text-parent">
-                                    <div className="box-formation">4-3-1-2</div>
-                                    <div className="box-regist1">2022/10/21</div>
+                                    <div className="box-formation">{props.formation}</div>
+                                    <div className="box-regist1">{props.create_date}</div>
                                 </div>
                             </div>
                             <div className="box-content2">
-                                <div className={"box-select1-" + props.formation}>
-                                    <p className="select-text">ワイドに開く</p>
-                                    <p className="select-text">裏に抜ける</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">前線を張る</p>
+                            {Object.keys(position).map(key => (
+                            //各ポジションごとの位置調整及びセレクトボックスの個数の出しわけ
+                                <div key={key} className={"box-select-" + props.formation + "-" + position[key].role}>
+                                {position[key].five_flg
+                                    ? <div>
+                                        <p className="select-text-5">{position[key].select_1}</p>
+                                        <p className="select-text-5">{position[key].select_2}</p>
+                                        <p className="select-text-5">{position[key].select_3}</p>
+                                        <p className="select-text-5">{position[key].select_4}</p>
+                                        <p className="select-text-5">{position[key].select_5}</p>
+                                    </div>
+                                    : <div>
+                                        <p className="select-text">{position[key].select_1}</p>
+                                        <p className="select-text">{position[key].select_2}</p>
+                                        <p className="select-text">{position[key].select_3}</p>
+                                        <p className="select-text">{position[key].select_4}</p>
+                                    </div>
+                                }
                                 </div>
-                                <div className={"box-select2-" + props.formation}>
-                                    <p className="select-text-5">ワイドに開く</p>
-                                    <p className="select-text-5">裏に抜ける</p>
-                                    <p className="select-text-5">前線にとどまる</p>
-                                    <p className="select-text-5">攻撃時に上がらない</p>
-                                    <p className="select-text-5">オーバーラップ</p>
-                                </div>
-                                <div className={"box-select3-" + props.formation}>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                </div>
-                                <div className={"box-select4-" + props.formation}>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                </div>
-                                <div className={"box-select5-" + props.formation}>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                </div>
-                                <div className={"box-select6-" + props.formation}>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                </div>
-                                <div className={"box-select7-" + props.formation}>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                </div>
-
-                                <div className={"box-select8-" + props.formation}>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                </div>
-                                <div className={"box-select9-" + props.formation}>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                </div>
-                                <div className={"box-select10-" + props.formation}>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                    <p className="select-text">初期設定</p>
-                                </div>
+                            ))}
                             </div>
                             <div className="parameter">
                                 <div className="defense">

@@ -24,7 +24,7 @@ export default function Home() {
       try{
         const res = await axios.get(url);
         //console.log(res.data);
-        setValue(res.data.post);
+        setValue(res.data.data);
         return;
       }catch (e){
         return e;
@@ -32,7 +32,6 @@ export default function Home() {
     })();
   },[]);
 
-  console.log(value);
 /*
   const numbers = [
     {
@@ -68,8 +67,8 @@ export default function Home() {
           pagination={{ clickable: true }}
           autoplay={false}
           >
-          {value.map((formation) =>(
-            <SwiperSlide key={formation.id}>
+          {value.map((formation,index) =>(
+            <SwiperSlide key={index}>
               <Formatin_contents key={formation.id}{...formation}/>
             </SwiperSlide>
           ))}
