@@ -1,0 +1,117 @@
+
+/* カードレイアウト部分をラッピングし、
+Flexboxを指定"space-between"で各アイテムを均等に配置し、
+最初と最後のアイテムを端に寄せます。*/
+#cardlayout-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 390px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+/* リンクテキストの下線を非表示 */
+a.card-link {
+  text-decoration: none;
+}
+
+/* カードレイアウト内の画像を幅いっぱいに表示 */
+#cardlayout-wrap img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* カードレイアウトのタイトル部分 */
+.card-title {
+  margin: 0.6em 0 0;
+  color: #333;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.card-title-formation {
+  margin: 10px 0px 0px 15px;
+  color: #333;
+  text-align: left;
+  font-size: 50px;
+}
+
+.card-title-name {
+  margin: 10px 0px 20px 0px;
+  color: #333;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* カードレイアウトの説明文部分 */
+.card-text-tax {
+  margin: 0;
+  padding: 1em;
+  color: #818181;
+}
+
+
+/* カードレイアウトを1カラムで配置 */
+.card-list {
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  padding: 0;
+  width: 95%;
+  background: #f1ffc3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 5%;
+}
+
+.card-list-new {
+  margin: 0.5em auto;
+  padding: 0;
+  width: 95%;
+  background: #a4f3fdb9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 5%;
+}
+
+/* 画面幅768px以上の場合カードレイアウトを2カラムで配置 */
+@media all and (min-width: 1000px) {
+  .card-list {
+      margin: 0.5em 0;
+      width: calc(100% / 2); /* 100%幅を2で割るという指定 */
+  }
+}
+
+/* 画面幅992px以上の場合カードレイアウトを3カラムで配置 */
+@media all and (min-width: 1000px) {
+  .card-list {
+      width: calc(100% / 3); /* 100%幅を3で割るという指定 */
+  }
+  
+/* 最後の行が3列より少ない場合左寄せにレイアウトさせる */
+  #cardlayout-wrap::after{
+      content: "";
+      display: block;
+      width: calc(100% / 3);
+  }
+}
+h2 {
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}

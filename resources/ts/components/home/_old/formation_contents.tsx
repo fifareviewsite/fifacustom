@@ -11,22 +11,17 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { ConstructionRounded } from '@mui/icons-material';
 //import Position from "../home/position";
-import { useNavigate } from "react-router-dom";
 
 // index.blade.phpのid="select_top"を読み込む
 
 export default function formation_contents(props){
     
     const position = props.contents;
-    const navigate = useNavigate();
-    const formationDetail = (id) =>{
-        navigate('/formationdetail/${id}')
-    } 
     console.log(position);
     return (
         <div className="box-row" >
                 <SwiperSlide>
-                    <div className="box-parent" onClick={formationDetail}>
+                    <div className="box-parent">
                         <div className="box">
                             <div className="box-content1">
                                 <div className="box-title1">{props.title}</div>
@@ -90,7 +85,7 @@ export default function formation_contents(props){
                             </div>
                         </div>
                     </div>
-                </SwiperSlide>
+                    </SwiperSlide>
         </div>
     );
   }

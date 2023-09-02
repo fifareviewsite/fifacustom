@@ -9,11 +9,15 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import axios from "axios";
+import '../../scss/trend.scss';
 
 import Formatin_contents from "./home/formation_contents";
 import Formatin_contents_1000 from "./home/formation_contents_1000";
 import Formatin_contents_1600 from "./home/formation_contents_1600";
 import Burger from "./header";
+import Trend from "./home/trend";
+import Trend_new from "./home/trend_new";
+import MaterialHeader from "./Material_header";
 export default function Home() {
   const [value,setValue] = useState([]);
 
@@ -32,33 +36,12 @@ export default function Home() {
     })();
   },[]);
 
-/*
-  const numbers = [
-    {
-        id:1,
-        formation:4312,
-    },
-    {
-        id:2,
-        formation:343,
-        cbFlg:true
-    },
-    {
-        id:3,
-        formation:4312,
-        cbFlg:false
-    },
-    {
-        id:4,
-        formation:4312,
-        cbFlg:false
-    },
-]*/
   return (
     <div>
-      <div><Burger /></div>
+      <div><MaterialHeader /></div>
+      {/*<div><Burger /></div>*/}
       {/*<Link to="/page_a">PageA</Link>*/}
-      <MediaQuery query="(max-width: 999px)">
+      <MediaQuery query="(max-width: 749px)">
         <Swiper
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, Autoplay]}
@@ -70,6 +53,82 @@ export default function Home() {
           {value.map((formation,index) =>(
             <SwiperSlide key={index}>
               <Formatin_contents key={formation.id}{...formation}/>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <h2>Trend (07/02~08/02)</h2>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+          spaceBetween={5}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          autoplay={false}
+          >
+          {value.map((formation,index) =>(
+            <SwiperSlide key={index}>
+              <Trend />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <h2>New</h2>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+          spaceBetween={5}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          autoplay={false}
+          >
+          {value.map((formation,index) =>(
+            <SwiperSlide key={index}>
+              <Trend_new />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </MediaQuery>
+      <MediaQuery query="(min-width: 750px) and (max-width: 1000px)">
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+          spaceBetween={50}
+          slidesPerView={2}
+          pagination={{ clickable: true }}
+          autoplay={false}
+          >
+          {value.map((formation,index) =>(
+            <SwiperSlide key={index}>
+              <Formatin_contents key={formation.id}{...formation}/>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <h2>Trend (07/02~08/02)</h2>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+          spaceBetween={5}
+          slidesPerView={2}
+          pagination={{ clickable: true }}
+          autoplay={false}
+          >
+          {value.map((formation,index) =>(
+            <SwiperSlide key={index}>
+              <Trend />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <h2>New</h2>
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+          spaceBetween={5}
+          slidesPerView={2}
+          pagination={{ clickable: true }}
+          autoplay={false}
+          >
+          {value.map((formation,index) =>(
+            <SwiperSlide key={index}>
+              <Trend_new />
             </SwiperSlide>
           ))}
         </Swiper>
